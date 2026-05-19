@@ -99,7 +99,7 @@ public final class PolkadotDefaultTheme: CommonTheme, @unchecked Sendable {
         // MARK: Avatar — background
 
         public let avatarBgAmethyst = UIColor(rgbHex: 0x7C3AED)
-        public let avatarBgOpal = UIColor(rgbHex: 0xA5B4FC)
+        public let avatarBgOpal = UIColor(rgbHex: 0x1E1B4B)
         public let avatarBgTurquoise = UIColor(rgbHex: 0x0891B2)
         public let avatarBgOnyx = UIColor(rgbHex: 0x1E293B)
         public let avatarBgPearl = UIColor(rgbHex: 0x262626)
@@ -121,5 +121,10 @@ public final class PolkadotDefaultTheme: CommonTheme, @unchecked Sendable {
         public let avatarFgRuby = UIColor(rgbHex: 0xFFE4E6)
         public let avatarFgSapphire = UIColor(rgbHex: 0xDBEAFE)
         public let avatarFgGarnet = UIColor(rgbHex: 0xFEE2E2)
+
+        // MARK: Gradient
+
+        public let gradientNavigationOverlayStart = UIColor(rgbaHex: 0x0000_00CC)
+        public let gradientNavigationOverlayEnd = UIColor(rgbaHex: 0x0000_0000)
     }
 }

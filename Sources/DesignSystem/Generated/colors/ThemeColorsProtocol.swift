@@ -113,6 +113,11 @@ public protocol ThemeColorsProtocol: Sendable {
     var avatarFgSapphire: UIColor { get }
     var avatarFgGarnet: UIColor { get }
 
+    // MARK: Gradient
+
+    var gradientNavigationOverlayStart: UIColor { get }
+    var gradientNavigationOverlayEnd: UIColor { get }
+
     func color(_ color: ThemeColor) -> UIColor
 }
 
@@ -216,6 +221,10 @@ public enum ThemeColor: String, Hashable, CaseIterable {
     case avatarFgRuby
     case avatarFgSapphire
     case avatarFgGarnet
+
+    // Gradient
+    case gradientNavigationOverlayStart
+    case gradientNavigationOverlayEnd
 }
 
 public extension ThemeColorsProtocol {
@@ -297,6 +306,8 @@ public extension ThemeColorsProtocol {
         case .avatarFgRuby: avatarFgRuby
         case .avatarFgSapphire: avatarFgSapphire
         case .avatarFgGarnet: avatarFgGarnet
+        case .gradientNavigationOverlayStart: gradientNavigationOverlayStart
+        case .gradientNavigationOverlayEnd: gradientNavigationOverlayEnd
         }
     }
 }
