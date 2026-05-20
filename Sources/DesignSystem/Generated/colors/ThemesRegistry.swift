@@ -1,7 +1,6 @@
 public enum ThemesRegistry {
     public static let factories: [ThemeSelection: () -> Theme] = [
-        .polkadotDefault: PolkadotDefaultTheme.init,
-        .polkadotLight: PolkadotLightTheme.init
+        .polkadotDefault: PolkadotDefaultTheme.init
     ]
 
     public static let `default`: ThemeSelection = .polkadotDefault
