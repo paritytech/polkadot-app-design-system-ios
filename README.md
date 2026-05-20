@@ -9,7 +9,7 @@ In `Package.swift`:
 ```swift
 .package(
     url: "https://github.com/novasamatech/polkadot-app-design-system-ios",
-    from: "0.1.0"
+    from: "0.0.1"
 )
 ```
 
