@@ -17,6 +17,7 @@ public extension ShapeStyle where Self == Color {
     static var fgStaticWhite: Color { .app(.fgStaticWhite) }
     static var fgSecondaryHover: Color { .app(.fgSecondaryHover) }
     static var fgSecondaryInvertedHover: Color { .app(.fgSecondaryInvertedHover) }
+    static var fgDisabled: Color { .app(.fgDisabled) }
 
     // MARK: Background — surface
 
@@ -60,11 +61,14 @@ public extension ShapeStyle where Self == Color {
     static var bgActionTertiaryInverted: Color { .app(.bgActionTertiaryInverted) }
     static var bgActionTertiaryInvertedHover: Color { .app(.bgActionTertiaryInvertedHover) }
     static var bgActionActive: Color { .app(.bgActionActive) }
+    static var bgActionDisabled: Color { .app(.bgActionDisabled) }
 
     // MARK: Background — illustration
 
     static var bgIllustrationDark: Color { .app(.bgIllustrationDark) }
     static var bgIllustrationLight: Color { .app(.bgIllustrationLight) }
+    static var bgIllustrationDarkMuted: Color { .app(.bgIllustrationDarkMuted) }
+    static var bgIllustrationLightMuted: Color { .app(.bgIllustrationLightMuted) }
 
     // MARK: Stroke
 

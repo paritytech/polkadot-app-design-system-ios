@@ -17,6 +17,7 @@ public protocol ThemeColorsProtocol: Sendable {
     var fgStaticWhite: UIColor { get }
     var fgSecondaryHover: UIColor { get }
     var fgSecondaryInvertedHover: UIColor { get }
+    var fgDisabled: UIColor { get }
 
     // MARK: Background — surface
 
@@ -60,11 +61,14 @@ public protocol ThemeColorsProtocol: Sendable {
     var bgActionTertiaryInverted: UIColor { get }
     var bgActionTertiaryInvertedHover: UIColor { get }
     var bgActionActive: UIColor { get }
+    var bgActionDisabled: UIColor { get }
 
     // MARK: Background — illustration
 
     var bgIllustrationDark: UIColor { get }
     var bgIllustrationLight: UIColor { get }
+    var bgIllustrationDarkMuted: UIColor { get }
+    var bgIllustrationLightMuted: UIColor { get }
 
     // MARK: Stroke
 
@@ -137,6 +141,7 @@ public enum ThemeColor: String, Hashable, CaseIterable {
     case fgStaticWhite
     case fgSecondaryHover
     case fgSecondaryInvertedHover
+    case fgDisabled
 
     // Background — surface
     case bgSurfaceMain
@@ -175,10 +180,13 @@ public enum ThemeColor: String, Hashable, CaseIterable {
     case bgActionTertiaryInverted
     case bgActionTertiaryInvertedHover
     case bgActionActive
+    case bgActionDisabled
 
     // Background — illustration
     case bgIllustrationDark
     case bgIllustrationLight
+    case bgIllustrationDarkMuted
+    case bgIllustrationLightMuted
 
     // Stroke
     case strokePrimary
@@ -244,6 +252,7 @@ public extension ThemeColorsProtocol {
         case .fgStaticWhite: fgStaticWhite
         case .fgSecondaryHover: fgSecondaryHover
         case .fgSecondaryInvertedHover: fgSecondaryInvertedHover
+        case .fgDisabled: fgDisabled
         case .bgSurfaceMain: bgSurfaceMain
         case .bgSurfaceContainer: bgSurfaceContainer
         case .bgSurfaceContainerInverted: bgSurfaceContainerInverted
@@ -272,8 +281,11 @@ public extension ThemeColorsProtocol {
         case .bgActionTertiaryInverted: bgActionTertiaryInverted
         case .bgActionTertiaryInvertedHover: bgActionTertiaryInvertedHover
         case .bgActionActive: bgActionActive
+        case .bgActionDisabled: bgActionDisabled
         case .bgIllustrationDark: bgIllustrationDark
         case .bgIllustrationLight: bgIllustrationLight
+        case .bgIllustrationDarkMuted: bgIllustrationDarkMuted
+        case .bgIllustrationLightMuted: bgIllustrationLightMuted
         case .strokePrimary: strokePrimary
         case .strokeError: strokeError
         case .strokeWarning: strokeWarning

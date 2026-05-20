@@ -17,6 +17,7 @@ public extension UIColor {
     static let fgStaticWhite = app(.fgStaticWhite)
     static let fgSecondaryHover = app(.fgSecondaryHover)
     static let fgSecondaryInvertedHover = app(.fgSecondaryInvertedHover)
+    static let fgDisabled = app(.fgDisabled)
 
     // MARK: Background — surface
 
@@ -60,11 +61,14 @@ public extension UIColor {
     static let bgActionTertiaryInverted = app(.bgActionTertiaryInverted)
     static let bgActionTertiaryInvertedHover = app(.bgActionTertiaryInvertedHover)
     static let bgActionActive = app(.bgActionActive)
+    static let bgActionDisabled = app(.bgActionDisabled)
 
     // MARK: Background — illustration
 
     static let bgIllustrationDark = app(.bgIllustrationDark)
     static let bgIllustrationLight = app(.bgIllustrationLight)
+    static let bgIllustrationDarkMuted = app(.bgIllustrationDarkMuted)
+    static let bgIllustrationLightMuted = app(.bgIllustrationLightMuted)
 
     // MARK: Stroke
 
