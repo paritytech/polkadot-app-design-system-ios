@@ -26,6 +26,7 @@ public final class PolkadotDefaultTheme: CommonTheme, @unchecked Sendable {
         public let fgStaticWhite = UIColor(rgbHex: 0xFFFFFF)
         public let fgSecondaryHover = UIColor(rgbHex: 0xDADBE0)
         public let fgSecondaryInvertedHover = UIColor(rgbHex: 0x000000)
+        public let fgDisabled = UIColor(rgbHex: 0x585B62)
 
         // MARK: Background — surface
 
@@ -57,23 +58,26 @@ public final class PolkadotDefaultTheme: CommonTheme, @unchecked Sendable {
         // MARK: Background — action
 
         public let bgActionPrimary = UIColor(rgbHex: 0xDADBE0)
-        public let bgActionSecondary = UIColor(rgbHex: 0x2C2E34)
+        public let bgActionSecondary = UIColor(rgbHex: 0x404249)
         public let bgActionPrimaryInverted = UIColor(rgbHex: 0x0B0C0F)
         public let bgActionSecondaryInverted = UIColor(rgbHex: 0xC9CAD0)
         public let bgActionPrimaryHover = UIColor(rgbHex: 0xC9CAD0)
-        public let bgActionSecondaryHover = UIColor(rgbHex: 0x404249)
+        public let bgActionSecondaryHover = UIColor(rgbHex: 0x2C2E34)
         public let bgActionPrimaryInvertedHover = UIColor(rgbHex: 0x23252A)
         public let bgActionSecondaryInvertedHover = UIColor(rgbHex: 0xA9ABB3)
-        public let bgActionTertiary = UIColor(rgbHex: 0x404249)
-        public let bgActionTertiaryHover = UIColor(rgbHex: 0x585B62)
+        public let bgActionTertiary = UIColor(rgbHex: 0x2C2E34)
+        public let bgActionTertiaryHover = UIColor(rgbHex: 0x404249)
         public let bgActionTertiaryInverted = UIColor(rgbHex: 0xF4F4F5)
         public let bgActionTertiaryInvertedHover = UIColor(rgbHex: 0xDADBE0)
         public let bgActionActive = UIColor(rgbHex: 0x585B62)
+        public let bgActionDisabled = UIColor(rgbHex: 0x2C2E34)
 
         // MARK: Background — illustration
 
         public let bgIllustrationDark = UIColor(rgbHex: 0xDADBE0)
         public let bgIllustrationLight = UIColor(rgbHex: 0x1A1B20)
+        public let bgIllustrationDarkMuted = UIColor(rgbHex: 0x585B62)
+        public let bgIllustrationLightMuted = UIColor(rgbHex: 0x585B62)
 
         // MARK: Stroke
 
