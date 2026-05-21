@@ -27,6 +27,7 @@ public final class TypographyManager {
         selection: TypographySelection? = nil,
         settingsManager: SettingsManagerProtocol = SettingsManager.shared
     ) {
+        FontRegistrar.registerBundledFontsIfNeeded()
         self.settingsManager = settingsManager
         let resolved = selection
             ?? Self.loadPersisted(from: settingsManager)

@@ -24,7 +24,10 @@ let package = Package(
             dependencies: [
                 .product(name: "Keystore-iOS", package: "keystore-ios")
             ],
-            path: "Sources/DesignSystem"
+            path: "Sources/DesignSystem",
+            resources: [
+                .process("Resources/Fonts")
+            ]
         ),
         .testTarget(
             name: "DesignSystemTests",
