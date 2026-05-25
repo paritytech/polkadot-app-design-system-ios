@@ -41,6 +41,8 @@ public extension ShapeStyle where Self == Color {
     static var bgStatusWarning: Color { .app(.bgStatusWarning) }
     static var bgStatusErrorHover: Color { .app(.bgStatusErrorHover) }
     static var bgStatusWarningHover: Color { .app(.bgStatusWarningHover) }
+    static var bgStatusSuccess: Color { .app(.bgStatusSuccess) }
+    static var bgStatusSuccessHover: Color { .app(.bgStatusSuccessHover) }
 
     // MARK: Background — accent
 
