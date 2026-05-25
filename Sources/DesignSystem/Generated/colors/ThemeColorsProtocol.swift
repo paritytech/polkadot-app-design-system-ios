@@ -41,6 +41,8 @@ public protocol ThemeColorsProtocol: Sendable {
     var bgStatusWarning: UIColor { get }
     var bgStatusErrorHover: UIColor { get }
     var bgStatusWarningHover: UIColor { get }
+    var bgStatusSuccess: UIColor { get }
+    var bgStatusSuccessHover: UIColor { get }
 
     // MARK: Background — accent
 
@@ -162,6 +164,8 @@ public enum ThemeColor: String, Hashable, CaseIterable {
     case bgStatusWarning
     case bgStatusErrorHover
     case bgStatusWarningHover
+    case bgStatusSuccess
+    case bgStatusSuccessHover
 
     // Background — accent
     case bgAccent
@@ -267,6 +271,8 @@ public extension ThemeColorsProtocol {
         case .bgStatusWarning: bgStatusWarning
         case .bgStatusErrorHover: bgStatusErrorHover
         case .bgStatusWarningHover: bgStatusWarningHover
+        case .bgStatusSuccess: bgStatusSuccess
+        case .bgStatusSuccessHover: bgStatusSuccessHover
         case .bgAccent: bgAccent
         case .bgActionPrimary: bgActionPrimary
         case .bgActionSecondary: bgActionSecondary

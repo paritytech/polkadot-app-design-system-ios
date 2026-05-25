@@ -41,6 +41,8 @@ public extension UIColor {
     static let bgStatusWarning = app(.bgStatusWarning)
     static let bgStatusErrorHover = app(.bgStatusErrorHover)
     static let bgStatusWarningHover = app(.bgStatusWarningHover)
+    static let bgStatusSuccess = app(.bgStatusSuccess)
+    static let bgStatusSuccessHover = app(.bgStatusSuccessHover)
 
     // MARK: Background — accent
 

@@ -50,6 +50,8 @@ public final class PolkadotDefaultTheme: CommonTheme, @unchecked Sendable {
         public let bgStatusWarning = UIColor(rgbHex: 0xF59E0B)
         public let bgStatusErrorHover = UIColor(rgbHex: 0xB4232F)
         public let bgStatusWarningHover = UIColor(rgbHex: 0xFFBB33)
+        public let bgStatusSuccess = UIColor(rgbHex: 0x16A34A)
+        public let bgStatusSuccessHover = UIColor(rgbHex: 0x12803C)
 
         // MARK: Background — accent
 
