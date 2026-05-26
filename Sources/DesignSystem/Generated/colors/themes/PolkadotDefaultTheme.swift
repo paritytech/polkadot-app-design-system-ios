@@ -28,22 +28,6 @@ public final class PolkadotDefaultTheme: CommonTheme, @unchecked Sendable {
         public let fgSecondaryInvertedHover = UIColor(rgbHex: 0x000000)
         public let fgDisabled = UIColor(rgbHex: 0x585B62)
 
-        // MARK: Background — surface
-
-        public let bgSurfaceMain = UIColor(rgbHex: 0x0B0C0F)
-        public let bgSurfaceContainer = UIColor(rgbHex: 0x1A1B20)
-        public let bgSurfaceContainerInverted = UIColor(rgbHex: 0xFFFFFF)
-        public let bgSurfaceNestedInverted = UIColor(rgbHex: 0xF4F4F5)
-        public let bgSurfaceOverlay = UIColor(rgbaHex: 0x0000_007A)
-        public let bgSurfaceNested = UIColor(rgbHex: 0x23252A)
-
-        // MARK: Background — selection
-
-        public let bgSelectionContainerHover = UIColor(rgbHex: 0x23252A)
-        public let bgSelectionContainerActive = UIColor(rgbHex: 0x2C2E34)
-        public let bgSelectionContainerHoverInverted = UIColor(rgbHex: 0xF7F7F8)
-        public let bgSelectionContainerActiveInverted = UIColor(rgbHex: 0xF4F4F5)
-
         // MARK: Background — status
 
         public let bgStatusError = UIColor(rgbHex: 0xD9363E)
@@ -73,6 +57,18 @@ public final class PolkadotDefaultTheme: CommonTheme, @unchecked Sendable {
         public let bgActionTertiaryInvertedHover = UIColor(rgbHex: 0xDADBE0)
         public let bgActionActive = UIColor(rgbHex: 0x585B62)
         public let bgActionDisabled = UIColor(rgbHex: 0x2C2E34)
+
+        // MARK: Background — surface
+
+        public let bgSurfaceContainerInverted = UIColor(rgbHex: 0xFFFFFF)
+        public let bgSurfaceNestedInverted = UIColor(rgbHex: 0xF4F4F5)
+        public let bgSurfaceOverlay = UIColor(rgbaHex: 0x0000_007A)
+        public let bgSurfaceNested = UIColor(rgbHex: 0x23252A)
+
+        // MARK: Background — selection
+
+        public let bgSelectionContainerHoverInverted = UIColor(rgbHex: 0xF7F7F8)
+        public let bgSelectionContainerActiveInverted = UIColor(rgbHex: 0xF4F4F5)
 
         // MARK: Background — illustration
 

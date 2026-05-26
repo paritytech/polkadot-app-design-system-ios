@@ -19,22 +19,6 @@ public protocol ThemeColorsProtocol: Sendable {
     var fgSecondaryInvertedHover: UIColor { get }
     var fgDisabled: UIColor { get }
 
-    // MARK: Background — surface
-
-    var bgSurfaceMain: UIColor { get }
-    var bgSurfaceContainer: UIColor { get }
-    var bgSurfaceContainerInverted: UIColor { get }
-    var bgSurfaceNestedInverted: UIColor { get }
-    var bgSurfaceOverlay: UIColor { get }
-    var bgSurfaceNested: UIColor { get }
-
-    // MARK: Background — selection
-
-    var bgSelectionContainerHover: UIColor { get }
-    var bgSelectionContainerActive: UIColor { get }
-    var bgSelectionContainerHoverInverted: UIColor { get }
-    var bgSelectionContainerActiveInverted: UIColor { get }
-
     // MARK: Background — status
 
     var bgStatusError: UIColor { get }
@@ -64,6 +48,18 @@ public protocol ThemeColorsProtocol: Sendable {
     var bgActionTertiaryInvertedHover: UIColor { get }
     var bgActionActive: UIColor { get }
     var bgActionDisabled: UIColor { get }
+
+    // MARK: Background — surface
+
+    var bgSurfaceContainerInverted: UIColor { get }
+    var bgSurfaceNestedInverted: UIColor { get }
+    var bgSurfaceOverlay: UIColor { get }
+    var bgSurfaceNested: UIColor { get }
+
+    // MARK: Background — selection
+
+    var bgSelectionContainerHoverInverted: UIColor { get }
+    var bgSelectionContainerActiveInverted: UIColor { get }
 
     // MARK: Background — illustration
 
@@ -145,20 +141,6 @@ public enum ThemeColor: String, Hashable, CaseIterable {
     case fgSecondaryInvertedHover
     case fgDisabled
 
-    // Background — surface
-    case bgSurfaceMain
-    case bgSurfaceContainer
-    case bgSurfaceContainerInverted
-    case bgSurfaceNestedInverted
-    case bgSurfaceOverlay
-    case bgSurfaceNested
-
-    // Background — selection
-    case bgSelectionContainerHover
-    case bgSelectionContainerActive
-    case bgSelectionContainerHoverInverted
-    case bgSelectionContainerActiveInverted
-
     // Background — status
     case bgStatusError
     case bgStatusWarning
@@ -185,6 +167,16 @@ public enum ThemeColor: String, Hashable, CaseIterable {
     case bgActionTertiaryInvertedHover
     case bgActionActive
     case bgActionDisabled
+
+    // Background — surface
+    case bgSurfaceContainerInverted
+    case bgSurfaceNestedInverted
+    case bgSurfaceOverlay
+    case bgSurfaceNested
+
+    // Background — selection
+    case bgSelectionContainerHoverInverted
+    case bgSelectionContainerActiveInverted
 
     // Background — illustration
     case bgIllustrationDark
@@ -257,16 +249,6 @@ public extension ThemeColorsProtocol {
         case .fgSecondaryHover: fgSecondaryHover
         case .fgSecondaryInvertedHover: fgSecondaryInvertedHover
         case .fgDisabled: fgDisabled
-        case .bgSurfaceMain: bgSurfaceMain
-        case .bgSurfaceContainer: bgSurfaceContainer
-        case .bgSurfaceContainerInverted: bgSurfaceContainerInverted
-        case .bgSurfaceNestedInverted: bgSurfaceNestedInverted
-        case .bgSurfaceOverlay: bgSurfaceOverlay
-        case .bgSurfaceNested: bgSurfaceNested
-        case .bgSelectionContainerHover: bgSelectionContainerHover
-        case .bgSelectionContainerActive: bgSelectionContainerActive
-        case .bgSelectionContainerHoverInverted: bgSelectionContainerHoverInverted
-        case .bgSelectionContainerActiveInverted: bgSelectionContainerActiveInverted
         case .bgStatusError: bgStatusError
         case .bgStatusWarning: bgStatusWarning
         case .bgStatusErrorHover: bgStatusErrorHover
@@ -288,6 +270,12 @@ public extension ThemeColorsProtocol {
         case .bgActionTertiaryInvertedHover: bgActionTertiaryInvertedHover
         case .bgActionActive: bgActionActive
         case .bgActionDisabled: bgActionDisabled
+        case .bgSurfaceContainerInverted: bgSurfaceContainerInverted
+        case .bgSurfaceNestedInverted: bgSurfaceNestedInverted
+        case .bgSurfaceOverlay: bgSurfaceOverlay
+        case .bgSurfaceNested: bgSurfaceNested
+        case .bgSelectionContainerHoverInverted: bgSelectionContainerHoverInverted
+        case .bgSelectionContainerActiveInverted: bgSelectionContainerActiveInverted
         case .bgIllustrationDark: bgIllustrationDark
         case .bgIllustrationLight: bgIllustrationLight
         case .bgIllustrationDarkMuted: bgIllustrationDarkMuted
