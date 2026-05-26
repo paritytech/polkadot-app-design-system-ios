@@ -19,22 +19,6 @@ public extension UIColor {
     static let fgSecondaryInvertedHover = app(.fgSecondaryInvertedHover)
     static let fgDisabled = app(.fgDisabled)
 
-    // MARK: Background — surface
-
-    static let bgSurfaceMain = app(.bgSurfaceMain)
-    static let bgSurfaceContainer = app(.bgSurfaceContainer)
-    static let bgSurfaceContainerInverted = app(.bgSurfaceContainerInverted)
-    static let bgSurfaceNestedInverted = app(.bgSurfaceNestedInverted)
-    static let bgSurfaceOverlay = app(.bgSurfaceOverlay)
-    static let bgSurfaceNested = app(.bgSurfaceNested)
-
-    // MARK: Background — selection
-
-    static let bgSelectionContainerHover = app(.bgSelectionContainerHover)
-    static let bgSelectionContainerActive = app(.bgSelectionContainerActive)
-    static let bgSelectionContainerHoverInverted = app(.bgSelectionContainerHoverInverted)
-    static let bgSelectionContainerActiveInverted = app(.bgSelectionContainerActiveInverted)
-
     // MARK: Background — status
 
     static let bgStatusError = app(.bgStatusError)
@@ -64,6 +48,22 @@ public extension UIColor {
     static let bgActionTertiaryInvertedHover = app(.bgActionTertiaryInvertedHover)
     static let bgActionActive = app(.bgActionActive)
     static let bgActionDisabled = app(.bgActionDisabled)
+
+    // MARK: Background — surface
+
+    static let bgSurfaceContainerInverted = app(.bgSurfaceContainerInverted)
+    static let bgSurfaceNestedInverted = app(.bgSurfaceNestedInverted)
+    static let bgSurfaceOverlay = app(.bgSurfaceOverlay)
+    static let bgSurfaceNested = app(.bgSurfaceNested)
+    static let bgSurfaceMain = app(.bgSurfaceMain)
+    static let bgSurfaceContainer = app(.bgSurfaceContainer)
+
+    // MARK: Background — selection
+
+    static let bgSelectionContainerHoverInverted = app(.bgSelectionContainerHoverInverted)
+    static let bgSelectionContainerActiveInverted = app(.bgSelectionContainerActiveInverted)
+    static let bgSelectionContainerHover = app(.bgSelectionContainerHover)
+    static let bgSelectionContainerActive = app(.bgSelectionContainerActive)
 
     // MARK: Background — illustration
 

@@ -19,22 +19,6 @@ public extension ShapeStyle where Self == Color {
     static var fgSecondaryInvertedHover: Color { .app(.fgSecondaryInvertedHover) }
     static var fgDisabled: Color { .app(.fgDisabled) }
 
-    // MARK: Background — surface
-
-    static var bgSurfaceMain: Color { .app(.bgSurfaceMain) }
-    static var bgSurfaceContainer: Color { .app(.bgSurfaceContainer) }
-    static var bgSurfaceContainerInverted: Color { .app(.bgSurfaceContainerInverted) }
-    static var bgSurfaceNestedInverted: Color { .app(.bgSurfaceNestedInverted) }
-    static var bgSurfaceOverlay: Color { .app(.bgSurfaceOverlay) }
-    static var bgSurfaceNested: Color { .app(.bgSurfaceNested) }
-
-    // MARK: Background — selection
-
-    static var bgSelectionContainerHover: Color { .app(.bgSelectionContainerHover) }
-    static var bgSelectionContainerActive: Color { .app(.bgSelectionContainerActive) }
-    static var bgSelectionContainerHoverInverted: Color { .app(.bgSelectionContainerHoverInverted) }
-    static var bgSelectionContainerActiveInverted: Color { .app(.bgSelectionContainerActiveInverted) }
-
     // MARK: Background — status
 
     static var bgStatusError: Color { .app(.bgStatusError) }
@@ -64,6 +48,22 @@ public extension ShapeStyle where Self == Color {
     static var bgActionTertiaryInvertedHover: Color { .app(.bgActionTertiaryInvertedHover) }
     static var bgActionActive: Color { .app(.bgActionActive) }
     static var bgActionDisabled: Color { .app(.bgActionDisabled) }
+
+    // MARK: Background — surface
+
+    static var bgSurfaceContainerInverted: Color { .app(.bgSurfaceContainerInverted) }
+    static var bgSurfaceNestedInverted: Color { .app(.bgSurfaceNestedInverted) }
+    static var bgSurfaceOverlay: Color { .app(.bgSurfaceOverlay) }
+    static var bgSurfaceNested: Color { .app(.bgSurfaceNested) }
+    static var bgSurfaceMain: Color { .app(.bgSurfaceMain) }
+    static var bgSurfaceContainer: Color { .app(.bgSurfaceContainer) }
+
+    // MARK: Background — selection
+
+    static var bgSelectionContainerHoverInverted: Color { .app(.bgSelectionContainerHoverInverted) }
+    static var bgSelectionContainerActiveInverted: Color { .app(.bgSelectionContainerActiveInverted) }
+    static var bgSelectionContainerHover: Color { .app(.bgSelectionContainerHover) }
+    static var bgSelectionContainerActive: Color { .app(.bgSelectionContainerActive) }
 
     // MARK: Background — illustration
 
