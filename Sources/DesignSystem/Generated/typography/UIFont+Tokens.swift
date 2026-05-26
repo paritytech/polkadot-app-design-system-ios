@@ -31,9 +31,6 @@ public extension UIFont {
     static var paragraphLarge: UIFont { .app(.paragraphLarge) }
     static var paragraphMedium: UIFont { .app(.paragraphMedium) }
     static var paragraphSmall: UIFont { .app(.paragraphSmall) }
-    static var paragraphLargeMono: UIFont { .app(.paragraphLargeMono) }
-    static var paragraphMediumMono: UIFont { .app(.paragraphMediumMono) }
-    static var paragraphSmallMono: UIFont { .app(.paragraphSmallMono) }
 
     // MARK: Body
 
@@ -49,13 +46,28 @@ public extension UIFont {
     static var labelMedium: UIFont { .app(.labelMedium) }
     static var labelSmall: UIFont { .app(.labelSmall) }
     static var labelMediumEmphasized: UIFont { .app(.labelMediumEmphasized) }
-    static var labelMediumCAPS: UIFont { .app(.labelMediumCAPS) }
     static var labelSmallEmphasized: UIFont { .app(.labelSmallEmphasized) }
-    static var labelSmallCAPS: UIFont { .app(.labelSmallCAPS) }
 
     // MARK: Emoji
 
     static var emojiLarge: UIFont { .app(.emojiLarge) }
     static var emojiMedium: UIFont { .app(.emojiMedium) }
     static var emojiSmall: UIFont { .app(.emojiSmall) }
+
+    // MARK: Code
+
+    static var codeLarge: UIFont { .app(.codeLarge) }
+    static var codeMedium: UIFont { .app(.codeMedium) }
+
+    // MARK: Caption
+
+    static var captionMedium: UIFont { .app(.captionMedium) }
+
+    // MARK: Code
+
+    static var codeSmall: UIFont { .app(.codeSmall) }
+
+    // MARK: Caption
+
+    static var captionSmall: UIFont { .app(.captionSmall) }
 }
