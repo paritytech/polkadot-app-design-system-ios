@@ -26,6 +26,9 @@ private struct DSTextModifier: ViewModifier {
             .font(Font(uiFont))
             .tracking(spec.tracking)
             .lineSpacing(lineSpacing)
+            // .lineSpacing only fills gaps between lines; the half-leading padding gives
+            // single-line text the full line box too, matching UIKit LabelStyle.
+            .padding(.vertical, lineSpacing / 2)
     }
 }
 
