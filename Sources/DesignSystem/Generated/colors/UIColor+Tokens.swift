@@ -18,6 +18,28 @@ public extension UIColor {
     static let fgSecondaryHover = app(.fgSecondaryHover)
     static let fgSecondaryInvertedHover = app(.fgSecondaryInvertedHover)
     static let fgDisabled = app(.fgDisabled)
+    static let fgAccent = app(.fgAccent)
+    static let fgAccentInverted = app(.fgAccentInverted)
+
+    // MARK: Background — surface
+
+    static let bgSurfaceMain = app(.bgSurfaceMain)
+    static let bgSurfaceContainer = app(.bgSurfaceContainer)
+    static let bgSurfaceContainerInverted = app(.bgSurfaceContainerInverted)
+    static let bgSurfaceNestedInverted = app(.bgSurfaceNestedInverted)
+    static let bgSurfaceOverlay = app(.bgSurfaceOverlay)
+    static let bgSurfaceNested = app(.bgSurfaceNested)
+    static let bgSurfaceAccent = app(.bgSurfaceAccent)
+    static let bgSurfaceAccentInverted = app(.bgSurfaceAccentInverted)
+    static let bgSurfaceAccentSoft = app(.bgSurfaceAccentSoft)
+    static let bgSurfaceAccentSoftInverted = app(.bgSurfaceAccentSoftInverted)
+
+    // MARK: Background — selection
+
+    static let bgSelectionContainerHover = app(.bgSelectionContainerHover)
+    static let bgSelectionContainerActive = app(.bgSelectionContainerActive)
+    static let bgSelectionContainerHoverInverted = app(.bgSelectionContainerHoverInverted)
+    static let bgSelectionContainerActiveInverted = app(.bgSelectionContainerActiveInverted)
 
     // MARK: Background — status
 
@@ -48,22 +70,9 @@ public extension UIColor {
     static let bgActionTertiaryInvertedHover = app(.bgActionTertiaryInvertedHover)
     static let bgActionActive = app(.bgActionActive)
     static let bgActionDisabled = app(.bgActionDisabled)
-
-    // MARK: Background — surface
-
-    static let bgSurfaceContainerInverted = app(.bgSurfaceContainerInverted)
-    static let bgSurfaceNestedInverted = app(.bgSurfaceNestedInverted)
-    static let bgSurfaceOverlay = app(.bgSurfaceOverlay)
-    static let bgSurfaceNested = app(.bgSurfaceNested)
-    static let bgSurfaceMain = app(.bgSurfaceMain)
-    static let bgSurfaceContainer = app(.bgSurfaceContainer)
-
-    // MARK: Background — selection
-
-    static let bgSelectionContainerHoverInverted = app(.bgSelectionContainerHoverInverted)
-    static let bgSelectionContainerActiveInverted = app(.bgSelectionContainerActiveInverted)
-    static let bgSelectionContainerHover = app(.bgSelectionContainerHover)
-    static let bgSelectionContainerActive = app(.bgSelectionContainerActive)
+    static let bgActionError = app(.bgActionError)
+    static let bgActionAccent = app(.bgActionAccent)
+    static let bgActionAccentInverted = app(.bgActionAccentInverted)
 
     // MARK: Background — illustration
 
@@ -82,6 +91,8 @@ public extension UIColor {
     static let strokePrimaryInverted = app(.strokePrimaryInverted)
     static let strokeSecondary = app(.strokeSecondary)
     static let strokeCutout = app(.strokeCutout)
+    static let strokeAccent = app(.strokeAccent)
+    static let strokeAccentSoft = app(.strokeAccentSoft)
 
     // MARK: Focus
 
@@ -93,31 +104,34 @@ public extension UIColor {
     static let shadowSoft = app(.shadowSoft)
     static let shadowMedium = app(.shadowMedium)
 
-    // MARK: Avatar — background
+    // MARK: Illustrative — background
 
-    static let avatarBgAmethyst = app(.avatarBgAmethyst)
-    static let avatarBgOpal = app(.avatarBgOpal)
-    static let avatarBgTurquoise = app(.avatarBgTurquoise)
-    static let avatarBgOnyx = app(.avatarBgOnyx)
-    static let avatarBgPearl = app(.avatarBgPearl)
-    static let avatarBgEmerald = app(.avatarBgEmerald)
-    static let avatarBgTopaz = app(.avatarBgTopaz)
-    static let avatarBgRuby = app(.avatarBgRuby)
-    static let avatarBgSapphire = app(.avatarBgSapphire)
-    static let avatarBgGarnet = app(.avatarBgGarnet)
+    static let illustrativeBgAmethyst = app(.illustrativeBgAmethyst)
+    static let illustrativeBgOpal = app(.illustrativeBgOpal)
+    static let illustrativeBgTurquoise = app(.illustrativeBgTurquoise)
+    static let illustrativeBgOnyx = app(.illustrativeBgOnyx)
+    static let illustrativeBgPearl = app(.illustrativeBgPearl)
+    static let illustrativeBgEmerald = app(.illustrativeBgEmerald)
+    static let illustrativeBgTopaz = app(.illustrativeBgTopaz)
+    static let illustrativeBgRuby = app(.illustrativeBgRuby)
+    static let illustrativeBgSapphire = app(.illustrativeBgSapphire)
+    static let illustrativeBgGarnet = app(.illustrativeBgGarnet)
+    static let illustrativeBgBlack = app(.illustrativeBgBlack)
+    static let illustrativeBgWhite = app(.illustrativeBgWhite)
 
-    // MARK: Avatar — foreground
+    // MARK: Illustrative — foreground
 
-    static let avatarFgAmethyst = app(.avatarFgAmethyst)
-    static let avatarFgOpal = app(.avatarFgOpal)
-    static let avatarFgTurquoise = app(.avatarFgTurquoise)
-    static let avatarFgOnyx = app(.avatarFgOnyx)
-    static let avatarFgPearl = app(.avatarFgPearl)
-    static let avatarFgEmerald = app(.avatarFgEmerald)
-    static let avatarFgTopaz = app(.avatarFgTopaz)
-    static let avatarFgRuby = app(.avatarFgRuby)
-    static let avatarFgSapphire = app(.avatarFgSapphire)
-    static let avatarFgGarnet = app(.avatarFgGarnet)
+    static let illustrativeFgAmethyst = app(.illustrativeFgAmethyst)
+    static let illustrativeFgOpal = app(.illustrativeFgOpal)
+    static let illustrativeFgTurquoise = app(.illustrativeFgTurquoise)
+    static let illustrativeFgOnyx = app(.illustrativeFgOnyx)
+    static let illustrativeFgPearl = app(.illustrativeFgPearl)
+    static let illustrativeFgEmerald = app(.illustrativeFgEmerald)
+    static let illustrativeFgTopaz = app(.illustrativeFgTopaz)
+    static let illustrativeFgRuby = app(.illustrativeFgRuby)
+    static let illustrativeFgSapphire = app(.illustrativeFgSapphire)
+    static let illustrativeFgGarnet = app(.illustrativeFgGarnet)
+    static let illustrativeFgAmethyst2 = app(.illustrativeFgAmethyst2)
 
     // MARK: Gradient
 

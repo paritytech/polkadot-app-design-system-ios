@@ -33,6 +33,7 @@ public extension TypographyStyle {
         case emojiLarge
         case emojiMedium
         case emojiSmall
+        case codeExtraLarge
         case codeLarge
         case codeMedium
         case captionMedium
@@ -75,6 +76,7 @@ public extension TypographyStyle.Typescale {
         case .emojiLarge: .init(family: .sans, size: 80, weight: .regular, lineHeight: 80, tracking: 0)
         case .emojiMedium: .init(family: .sans, size: 32, weight: .regular, lineHeight: 32, tracking: 0)
         case .emojiSmall: .init(family: .mono, size: 20, weight: .regular, lineHeight: 20, tracking: 0)
+        case .codeExtraLarge: .init(family: .mono, size: 20, weight: .regular, lineHeight: 24, tracking: 0)
         case .codeLarge: .init(family: .mono, size: 16, weight: .regular, lineHeight: 20, tracking: 0)
         case .codeMedium: .init(family: .mono, size: 14, weight: .regular, lineHeight: 18, tracking: 0)
         case .captionMedium: .init(family: .sans, size: 12, weight: .semiBold, lineHeight: 16, tracking: 1)
@@ -123,6 +125,7 @@ public extension TypographyStyle {
     static var emojiMedium: TypographyStyle { .init(typescale: .emojiMedium) }
     static var emojiSmall: TypographyStyle { .init(typescale: .emojiSmall) }
 
+    static var codeExtraLarge: TypographyStyle { .init(typescale: .codeExtraLarge) }
     static var codeLarge: TypographyStyle { .init(typescale: .codeLarge) }
     static var codeMedium: TypographyStyle { .init(typescale: .codeMedium) }
 

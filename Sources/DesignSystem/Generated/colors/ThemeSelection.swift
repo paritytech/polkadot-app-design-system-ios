@@ -1,3 +1,7 @@
 public enum ThemeSelection: String, Codable, CaseIterable, Hashable {
-    case polkadotDefault
+    case berlinNight
+    case berlinDay
+    case lisbon
+    case malta
+    case tokyo
 }

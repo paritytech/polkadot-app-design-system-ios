@@ -18,6 +18,28 @@ public protocol ThemeColorsProtocol: Sendable {
     var fgSecondaryHover: UIColor { get }
     var fgSecondaryInvertedHover: UIColor { get }
     var fgDisabled: UIColor { get }
+    var fgAccent: UIColor { get }
+    var fgAccentInverted: UIColor { get }
+
+    // MARK: Background — surface
+
+    var bgSurfaceMain: UIColor { get }
+    var bgSurfaceContainer: UIColor { get }
+    var bgSurfaceContainerInverted: UIColor { get }
+    var bgSurfaceNestedInverted: UIColor { get }
+    var bgSurfaceOverlay: UIColor { get }
+    var bgSurfaceNested: UIColor { get }
+    var bgSurfaceAccent: UIColor { get }
+    var bgSurfaceAccentInverted: UIColor { get }
+    var bgSurfaceAccentSoft: UIColor { get }
+    var bgSurfaceAccentSoftInverted: UIColor { get }
+
+    // MARK: Background — selection
+
+    var bgSelectionContainerHover: UIColor { get }
+    var bgSelectionContainerActive: UIColor { get }
+    var bgSelectionContainerHoverInverted: UIColor { get }
+    var bgSelectionContainerActiveInverted: UIColor { get }
 
     // MARK: Background — status
 
@@ -48,22 +70,9 @@ public protocol ThemeColorsProtocol: Sendable {
     var bgActionTertiaryInvertedHover: UIColor { get }
     var bgActionActive: UIColor { get }
     var bgActionDisabled: UIColor { get }
-
-    // MARK: Background — surface
-
-    var bgSurfaceContainerInverted: UIColor { get }
-    var bgSurfaceNestedInverted: UIColor { get }
-    var bgSurfaceOverlay: UIColor { get }
-    var bgSurfaceNested: UIColor { get }
-    var bgSurfaceMain: UIColor { get }
-    var bgSurfaceContainer: UIColor { get }
-
-    // MARK: Background — selection
-
-    var bgSelectionContainerHoverInverted: UIColor { get }
-    var bgSelectionContainerActiveInverted: UIColor { get }
-    var bgSelectionContainerHover: UIColor { get }
-    var bgSelectionContainerActive: UIColor { get }
+    var bgActionError: UIColor { get }
+    var bgActionAccent: UIColor { get }
+    var bgActionAccentInverted: UIColor { get }
 
     // MARK: Background — illustration
 
@@ -82,6 +91,8 @@ public protocol ThemeColorsProtocol: Sendable {
     var strokePrimaryInverted: UIColor { get }
     var strokeSecondary: UIColor { get }
     var strokeCutout: UIColor { get }
+    var strokeAccent: UIColor { get }
+    var strokeAccentSoft: UIColor { get }
 
     // MARK: Focus
 
@@ -93,31 +104,34 @@ public protocol ThemeColorsProtocol: Sendable {
     var shadowSoft: UIColor { get }
     var shadowMedium: UIColor { get }
 
-    // MARK: Avatar — background
+    // MARK: Illustrative — background
 
-    var avatarBgAmethyst: UIColor { get }
-    var avatarBgOpal: UIColor { get }
-    var avatarBgTurquoise: UIColor { get }
-    var avatarBgOnyx: UIColor { get }
-    var avatarBgPearl: UIColor { get }
-    var avatarBgEmerald: UIColor { get }
-    var avatarBgTopaz: UIColor { get }
-    var avatarBgRuby: UIColor { get }
-    var avatarBgSapphire: UIColor { get }
-    var avatarBgGarnet: UIColor { get }
+    var illustrativeBgAmethyst: UIColor { get }
+    var illustrativeBgOpal: UIColor { get }
+    var illustrativeBgTurquoise: UIColor { get }
+    var illustrativeBgOnyx: UIColor { get }
+    var illustrativeBgPearl: UIColor { get }
+    var illustrativeBgEmerald: UIColor { get }
+    var illustrativeBgTopaz: UIColor { get }
+    var illustrativeBgRuby: UIColor { get }
+    var illustrativeBgSapphire: UIColor { get }
+    var illustrativeBgGarnet: UIColor { get }
+    var illustrativeBgBlack: UIColor { get }
+    var illustrativeBgWhite: UIColor { get }
 
-    // MARK: Avatar — foreground
+    // MARK: Illustrative — foreground
 
-    var avatarFgAmethyst: UIColor { get }
-    var avatarFgOpal: UIColor { get }
-    var avatarFgTurquoise: UIColor { get }
-    var avatarFgOnyx: UIColor { get }
-    var avatarFgPearl: UIColor { get }
-    var avatarFgEmerald: UIColor { get }
-    var avatarFgTopaz: UIColor { get }
-    var avatarFgRuby: UIColor { get }
-    var avatarFgSapphire: UIColor { get }
-    var avatarFgGarnet: UIColor { get }
+    var illustrativeFgAmethyst: UIColor { get }
+    var illustrativeFgOpal: UIColor { get }
+    var illustrativeFgTurquoise: UIColor { get }
+    var illustrativeFgOnyx: UIColor { get }
+    var illustrativeFgPearl: UIColor { get }
+    var illustrativeFgEmerald: UIColor { get }
+    var illustrativeFgTopaz: UIColor { get }
+    var illustrativeFgRuby: UIColor { get }
+    var illustrativeFgSapphire: UIColor { get }
+    var illustrativeFgGarnet: UIColor { get }
+    var illustrativeFgAmethyst2: UIColor { get }
 
     // MARK: Gradient
 
@@ -144,6 +158,26 @@ public enum ThemeColor: String, Hashable, CaseIterable {
     case fgSecondaryHover
     case fgSecondaryInvertedHover
     case fgDisabled
+    case fgAccent
+    case fgAccentInverted
+
+    // Background — surface
+    case bgSurfaceMain
+    case bgSurfaceContainer
+    case bgSurfaceContainerInverted
+    case bgSurfaceNestedInverted
+    case bgSurfaceOverlay
+    case bgSurfaceNested
+    case bgSurfaceAccent
+    case bgSurfaceAccentInverted
+    case bgSurfaceAccentSoft
+    case bgSurfaceAccentSoftInverted
+
+    // Background — selection
+    case bgSelectionContainerHover
+    case bgSelectionContainerActive
+    case bgSelectionContainerHoverInverted
+    case bgSelectionContainerActiveInverted
 
     // Background — status
     case bgStatusError
@@ -171,20 +205,9 @@ public enum ThemeColor: String, Hashable, CaseIterable {
     case bgActionTertiaryInvertedHover
     case bgActionActive
     case bgActionDisabled
-
-    // Background — surface
-    case bgSurfaceContainerInverted
-    case bgSurfaceNestedInverted
-    case bgSurfaceOverlay
-    case bgSurfaceNested
-    case bgSurfaceMain
-    case bgSurfaceContainer
-
-    // Background — selection
-    case bgSelectionContainerHoverInverted
-    case bgSelectionContainerActiveInverted
-    case bgSelectionContainerHover
-    case bgSelectionContainerActive
+    case bgActionError
+    case bgActionAccent
+    case bgActionAccentInverted
 
     // Background — illustration
     case bgIllustrationDark
@@ -201,6 +224,8 @@ public enum ThemeColor: String, Hashable, CaseIterable {
     case strokePrimaryInverted
     case strokeSecondary
     case strokeCutout
+    case strokeAccent
+    case strokeAccentSoft
 
     // Focus
     case focusError
@@ -210,29 +235,32 @@ public enum ThemeColor: String, Hashable, CaseIterable {
     case shadowSoft
     case shadowMedium
 
-    // Avatar — background
-    case avatarBgAmethyst
-    case avatarBgOpal
-    case avatarBgTurquoise
-    case avatarBgOnyx
-    case avatarBgPearl
-    case avatarBgEmerald
-    case avatarBgTopaz
-    case avatarBgRuby
-    case avatarBgSapphire
-    case avatarBgGarnet
+    // Illustrative — background
+    case illustrativeBgAmethyst
+    case illustrativeBgOpal
+    case illustrativeBgTurquoise
+    case illustrativeBgOnyx
+    case illustrativeBgPearl
+    case illustrativeBgEmerald
+    case illustrativeBgTopaz
+    case illustrativeBgRuby
+    case illustrativeBgSapphire
+    case illustrativeBgGarnet
+    case illustrativeBgBlack
+    case illustrativeBgWhite
 
-    // Avatar — foreground
-    case avatarFgAmethyst
-    case avatarFgOpal
-    case avatarFgTurquoise
-    case avatarFgOnyx
-    case avatarFgPearl
-    case avatarFgEmerald
-    case avatarFgTopaz
-    case avatarFgRuby
-    case avatarFgSapphire
-    case avatarFgGarnet
+    // Illustrative — foreground
+    case illustrativeFgAmethyst
+    case illustrativeFgOpal
+    case illustrativeFgTurquoise
+    case illustrativeFgOnyx
+    case illustrativeFgPearl
+    case illustrativeFgEmerald
+    case illustrativeFgTopaz
+    case illustrativeFgRuby
+    case illustrativeFgSapphire
+    case illustrativeFgGarnet
+    case illustrativeFgAmethyst2
 
     // Gradient
     case gradientNavigationOverlayStart
@@ -257,6 +285,22 @@ public extension ThemeColorsProtocol {
         case .fgSecondaryHover: fgSecondaryHover
         case .fgSecondaryInvertedHover: fgSecondaryInvertedHover
         case .fgDisabled: fgDisabled
+        case .fgAccent: fgAccent
+        case .fgAccentInverted: fgAccentInverted
+        case .bgSurfaceMain: bgSurfaceMain
+        case .bgSurfaceContainer: bgSurfaceContainer
+        case .bgSurfaceContainerInverted: bgSurfaceContainerInverted
+        case .bgSurfaceNestedInverted: bgSurfaceNestedInverted
+        case .bgSurfaceOverlay: bgSurfaceOverlay
+        case .bgSurfaceNested: bgSurfaceNested
+        case .bgSurfaceAccent: bgSurfaceAccent
+        case .bgSurfaceAccentInverted: bgSurfaceAccentInverted
+        case .bgSurfaceAccentSoft: bgSurfaceAccentSoft
+        case .bgSurfaceAccentSoftInverted: bgSurfaceAccentSoftInverted
+        case .bgSelectionContainerHover: bgSelectionContainerHover
+        case .bgSelectionContainerActive: bgSelectionContainerActive
+        case .bgSelectionContainerHoverInverted: bgSelectionContainerHoverInverted
+        case .bgSelectionContainerActiveInverted: bgSelectionContainerActiveInverted
         case .bgStatusError: bgStatusError
         case .bgStatusWarning: bgStatusWarning
         case .bgStatusErrorHover: bgStatusErrorHover
@@ -278,16 +322,9 @@ public extension ThemeColorsProtocol {
         case .bgActionTertiaryInvertedHover: bgActionTertiaryInvertedHover
         case .bgActionActive: bgActionActive
         case .bgActionDisabled: bgActionDisabled
-        case .bgSurfaceContainerInverted: bgSurfaceContainerInverted
-        case .bgSurfaceNestedInverted: bgSurfaceNestedInverted
-        case .bgSurfaceOverlay: bgSurfaceOverlay
-        case .bgSurfaceNested: bgSurfaceNested
-        case .bgSurfaceMain: bgSurfaceMain
-        case .bgSurfaceContainer: bgSurfaceContainer
-        case .bgSelectionContainerHoverInverted: bgSelectionContainerHoverInverted
-        case .bgSelectionContainerActiveInverted: bgSelectionContainerActiveInverted
-        case .bgSelectionContainerHover: bgSelectionContainerHover
-        case .bgSelectionContainerActive: bgSelectionContainerActive
+        case .bgActionError: bgActionError
+        case .bgActionAccent: bgActionAccent
+        case .bgActionAccentInverted: bgActionAccentInverted
         case .bgIllustrationDark: bgIllustrationDark
         case .bgIllustrationLight: bgIllustrationLight
         case .bgIllustrationDarkMuted: bgIllustrationDarkMuted
@@ -300,30 +337,35 @@ public extension ThemeColorsProtocol {
         case .strokePrimaryInverted: strokePrimaryInverted
         case .strokeSecondary: strokeSecondary
         case .strokeCutout: strokeCutout
+        case .strokeAccent: strokeAccent
+        case .strokeAccentSoft: strokeAccentSoft
         case .focusError: focusError
         case .focusRing: focusRing
         case .shadowSoft: shadowSoft
         case .shadowMedium: shadowMedium
-        case .avatarBgAmethyst: avatarBgAmethyst
-        case .avatarBgOpal: avatarBgOpal
-        case .avatarBgTurquoise: avatarBgTurquoise
-        case .avatarBgOnyx: avatarBgOnyx
-        case .avatarBgPearl: avatarBgPearl
-        case .avatarBgEmerald: avatarBgEmerald
-        case .avatarBgTopaz: avatarBgTopaz
-        case .avatarBgRuby: avatarBgRuby
-        case .avatarBgSapphire: avatarBgSapphire
-        case .avatarBgGarnet: avatarBgGarnet
-        case .avatarFgAmethyst: avatarFgAmethyst
-        case .avatarFgOpal: avatarFgOpal
-        case .avatarFgTurquoise: avatarFgTurquoise
-        case .avatarFgOnyx: avatarFgOnyx
-        case .avatarFgPearl: avatarFgPearl
-        case .avatarFgEmerald: avatarFgEmerald
-        case .avatarFgTopaz: avatarFgTopaz
-        case .avatarFgRuby: avatarFgRuby
-        case .avatarFgSapphire: avatarFgSapphire
-        case .avatarFgGarnet: avatarFgGarnet
+        case .illustrativeBgAmethyst: illustrativeBgAmethyst
+        case .illustrativeBgOpal: illustrativeBgOpal
+        case .illustrativeBgTurquoise: illustrativeBgTurquoise
+        case .illustrativeBgOnyx: illustrativeBgOnyx
+        case .illustrativeBgPearl: illustrativeBgPearl
+        case .illustrativeBgEmerald: illustrativeBgEmerald
+        case .illustrativeBgTopaz: illustrativeBgTopaz
+        case .illustrativeBgRuby: illustrativeBgRuby
+        case .illustrativeBgSapphire: illustrativeBgSapphire
+        case .illustrativeBgGarnet: illustrativeBgGarnet
+        case .illustrativeBgBlack: illustrativeBgBlack
+        case .illustrativeBgWhite: illustrativeBgWhite
+        case .illustrativeFgAmethyst: illustrativeFgAmethyst
+        case .illustrativeFgOpal: illustrativeFgOpal
+        case .illustrativeFgTurquoise: illustrativeFgTurquoise
+        case .illustrativeFgOnyx: illustrativeFgOnyx
+        case .illustrativeFgPearl: illustrativeFgPearl
+        case .illustrativeFgEmerald: illustrativeFgEmerald
+        case .illustrativeFgTopaz: illustrativeFgTopaz
+        case .illustrativeFgRuby: illustrativeFgRuby
+        case .illustrativeFgSapphire: illustrativeFgSapphire
+        case .illustrativeFgGarnet: illustrativeFgGarnet
+        case .illustrativeFgAmethyst2: illustrativeFgAmethyst2
         case .gradientNavigationOverlayStart: gradientNavigationOverlayStart
         case .gradientNavigationOverlayEnd: gradientNavigationOverlayEnd
         }

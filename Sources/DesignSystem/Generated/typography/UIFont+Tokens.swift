@@ -56,6 +56,7 @@ public extension UIFont {
 
     // MARK: Code
 
+    static var codeExtraLarge: UIFont { .app(.codeExtraLarge) }
     static var codeLarge: UIFont { .app(.codeLarge) }
     static var codeMedium: UIFont { .app(.codeMedium) }
 
