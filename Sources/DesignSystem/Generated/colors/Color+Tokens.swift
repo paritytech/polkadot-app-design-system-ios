@@ -18,6 +18,28 @@ public extension ShapeStyle where Self == Color {
     static var fgSecondaryHover: Color { .app(.fgSecondaryHover) }
     static var fgSecondaryInvertedHover: Color { .app(.fgSecondaryInvertedHover) }
     static var fgDisabled: Color { .app(.fgDisabled) }
+    static var fgAccent: Color { .app(.fgAccent) }
+    static var fgAccentInverted: Color { .app(.fgAccentInverted) }
+
+    // MARK: Background — surface
+
+    static var bgSurfaceMain: Color { .app(.bgSurfaceMain) }
+    static var bgSurfaceContainer: Color { .app(.bgSurfaceContainer) }
+    static var bgSurfaceContainerInverted: Color { .app(.bgSurfaceContainerInverted) }
+    static var bgSurfaceNestedInverted: Color { .app(.bgSurfaceNestedInverted) }
+    static var bgSurfaceOverlay: Color { .app(.bgSurfaceOverlay) }
+    static var bgSurfaceNested: Color { .app(.bgSurfaceNested) }
+    static var bgSurfaceAccent: Color { .app(.bgSurfaceAccent) }
+    static var bgSurfaceAccentInverted: Color { .app(.bgSurfaceAccentInverted) }
+    static var bgSurfaceAccentSoft: Color { .app(.bgSurfaceAccentSoft) }
+    static var bgSurfaceAccentSoftInverted: Color { .app(.bgSurfaceAccentSoftInverted) }
+
+    // MARK: Background — selection
+
+    static var bgSelectionContainerHover: Color { .app(.bgSelectionContainerHover) }
+    static var bgSelectionContainerActive: Color { .app(.bgSelectionContainerActive) }
+    static var bgSelectionContainerHoverInverted: Color { .app(.bgSelectionContainerHoverInverted) }
+    static var bgSelectionContainerActiveInverted: Color { .app(.bgSelectionContainerActiveInverted) }
 
     // MARK: Background — status
 
@@ -48,22 +70,9 @@ public extension ShapeStyle where Self == Color {
     static var bgActionTertiaryInvertedHover: Color { .app(.bgActionTertiaryInvertedHover) }
     static var bgActionActive: Color { .app(.bgActionActive) }
     static var bgActionDisabled: Color { .app(.bgActionDisabled) }
-
-    // MARK: Background — surface
-
-    static var bgSurfaceContainerInverted: Color { .app(.bgSurfaceContainerInverted) }
-    static var bgSurfaceNestedInverted: Color { .app(.bgSurfaceNestedInverted) }
-    static var bgSurfaceOverlay: Color { .app(.bgSurfaceOverlay) }
-    static var bgSurfaceNested: Color { .app(.bgSurfaceNested) }
-    static var bgSurfaceMain: Color { .app(.bgSurfaceMain) }
-    static var bgSurfaceContainer: Color { .app(.bgSurfaceContainer) }
-
-    // MARK: Background — selection
-
-    static var bgSelectionContainerHoverInverted: Color { .app(.bgSelectionContainerHoverInverted) }
-    static var bgSelectionContainerActiveInverted: Color { .app(.bgSelectionContainerActiveInverted) }
-    static var bgSelectionContainerHover: Color { .app(.bgSelectionContainerHover) }
-    static var bgSelectionContainerActive: Color { .app(.bgSelectionContainerActive) }
+    static var bgActionError: Color { .app(.bgActionError) }
+    static var bgActionAccent: Color { .app(.bgActionAccent) }
+    static var bgActionAccentInverted: Color { .app(.bgActionAccentInverted) }
 
     // MARK: Background — illustration
 
@@ -82,6 +91,8 @@ public extension ShapeStyle where Self == Color {
     static var strokePrimaryInverted: Color { .app(.strokePrimaryInverted) }
     static var strokeSecondary: Color { .app(.strokeSecondary) }
     static var strokeCutout: Color { .app(.strokeCutout) }
+    static var strokeAccent: Color { .app(.strokeAccent) }
+    static var strokeAccentSoft: Color { .app(.strokeAccentSoft) }
 
     // MARK: Focus
 
@@ -93,31 +104,34 @@ public extension ShapeStyle where Self == Color {
     static var shadowSoft: Color { .app(.shadowSoft) }
     static var shadowMedium: Color { .app(.shadowMedium) }
 
-    // MARK: Avatar — background
+    // MARK: Illustrative — background
 
-    static var avatarBgAmethyst: Color { .app(.avatarBgAmethyst) }
-    static var avatarBgOpal: Color { .app(.avatarBgOpal) }
-    static var avatarBgTurquoise: Color { .app(.avatarBgTurquoise) }
-    static var avatarBgOnyx: Color { .app(.avatarBgOnyx) }
-    static var avatarBgPearl: Color { .app(.avatarBgPearl) }
-    static var avatarBgEmerald: Color { .app(.avatarBgEmerald) }
-    static var avatarBgTopaz: Color { .app(.avatarBgTopaz) }
-    static var avatarBgRuby: Color { .app(.avatarBgRuby) }
-    static var avatarBgSapphire: Color { .app(.avatarBgSapphire) }
-    static var avatarBgGarnet: Color { .app(.avatarBgGarnet) }
+    static var illustrativeBgAmethyst: Color { .app(.illustrativeBgAmethyst) }
+    static var illustrativeBgOpal: Color { .app(.illustrativeBgOpal) }
+    static var illustrativeBgTurquoise: Color { .app(.illustrativeBgTurquoise) }
+    static var illustrativeBgOnyx: Color { .app(.illustrativeBgOnyx) }
+    static var illustrativeBgPearl: Color { .app(.illustrativeBgPearl) }
+    static var illustrativeBgEmerald: Color { .app(.illustrativeBgEmerald) }
+    static var illustrativeBgTopaz: Color { .app(.illustrativeBgTopaz) }
+    static var illustrativeBgRuby: Color { .app(.illustrativeBgRuby) }
+    static var illustrativeBgSapphire: Color { .app(.illustrativeBgSapphire) }
+    static var illustrativeBgGarnet: Color { .app(.illustrativeBgGarnet) }
+    static var illustrativeBgBlack: Color { .app(.illustrativeBgBlack) }
+    static var illustrativeBgWhite: Color { .app(.illustrativeBgWhite) }
 
-    // MARK: Avatar — foreground
+    // MARK: Illustrative — foreground
 
-    static var avatarFgAmethyst: Color { .app(.avatarFgAmethyst) }
-    static var avatarFgOpal: Color { .app(.avatarFgOpal) }
-    static var avatarFgTurquoise: Color { .app(.avatarFgTurquoise) }
-    static var avatarFgOnyx: Color { .app(.avatarFgOnyx) }
-    static var avatarFgPearl: Color { .app(.avatarFgPearl) }
-    static var avatarFgEmerald: Color { .app(.avatarFgEmerald) }
-    static var avatarFgTopaz: Color { .app(.avatarFgTopaz) }
-    static var avatarFgRuby: Color { .app(.avatarFgRuby) }
-    static var avatarFgSapphire: Color { .app(.avatarFgSapphire) }
-    static var avatarFgGarnet: Color { .app(.avatarFgGarnet) }
+    static var illustrativeFgAmethyst: Color { .app(.illustrativeFgAmethyst) }
+    static var illustrativeFgOpal: Color { .app(.illustrativeFgOpal) }
+    static var illustrativeFgTurquoise: Color { .app(.illustrativeFgTurquoise) }
+    static var illustrativeFgOnyx: Color { .app(.illustrativeFgOnyx) }
+    static var illustrativeFgPearl: Color { .app(.illustrativeFgPearl) }
+    static var illustrativeFgEmerald: Color { .app(.illustrativeFgEmerald) }
+    static var illustrativeFgTopaz: Color { .app(.illustrativeFgTopaz) }
+    static var illustrativeFgRuby: Color { .app(.illustrativeFgRuby) }
+    static var illustrativeFgSapphire: Color { .app(.illustrativeFgSapphire) }
+    static var illustrativeFgGarnet: Color { .app(.illustrativeFgGarnet) }
+    static var illustrativeFgAmethyst2: Color { .app(.illustrativeFgAmethyst2) }
 
     // MARK: Gradient
 
