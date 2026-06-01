@@ -13,7 +13,7 @@ public final class TokyoTheme: CommonTheme, @unchecked Sendable {
         // MARK: Foreground
 
         public let fgError = UIColor(rgbHex: 0xD9363E)
-        public let fgLinkHover = UIColor(rgbHex: 0x881337)
+        public let fgLinkHover = UIColor(rgbHex: 0x831843)
         public let fgLink = UIColor(rgbHex: 0x9F1239)
         public let fgTertiary = UIColor(rgbHex: 0xD14967)
         public let fgSecondary = UIColor(rgbHex: 0x881337)
@@ -26,7 +26,7 @@ public final class TokyoTheme: CommonTheme, @unchecked Sendable {
         public let fgStaticWhite = UIColor(rgbHex: 0xFFFFFF)
         public let fgSecondaryHover = UIColor(rgbHex: 0x0B0C0F)
         public let fgSecondaryInvertedHover = UIColor(rgbHex: 0xDADADA)
-        public let fgDisabled = UIColor(rgbHex: 0xD9576D)
+        public let fgDisabled = UIColor(rgbHex: 0x8C8F98)
 
         // MARK: Background — surface
 
@@ -39,9 +39,9 @@ public final class TokyoTheme: CommonTheme, @unchecked Sendable {
 
         // MARK: Background — selection
 
-        public let bgSelectionContainerHover = UIColor(rgbHex: 0xFFF7F8)
-        public let bgSelectionContainerActive = UIColor(rgbHex: 0xFFE4E6)
-        public let bgSelectionContainerHoverInverted = UIColor(rgbHex: 0x4C0519)
+        public let bgSelectionContainerHover = UIColor(rgbHex: 0xF7F7F8)
+        public let bgSelectionContainerActive = UIColor(rgbHex: 0xF4F4F5)
+        public let bgSelectionContainerHoverInverted = UIColor(rgbHex: 0x23252A)
         public let bgSelectionContainerActiveInverted = UIColor(rgbHex: 0x1A1B20)
 
         // MARK: Background — status
@@ -60,19 +60,19 @@ public final class TokyoTheme: CommonTheme, @unchecked Sendable {
         // MARK: Background — action
 
         public let bgActionPrimary = UIColor(rgbHex: 0x9F1239)
-        public let bgActionSecondary = UIColor(rgbHex: 0xFDA4AF)
+        public let bgActionSecondary = UIColor(rgbHex: 0xC9CAD0)
         public let bgActionPrimaryInverted = UIColor(rgbHex: 0xFFFFFF)
-        public let bgActionSecondaryInverted = UIColor(rgbHex: 0x4C0519)
+        public let bgActionSecondaryInverted = UIColor(rgbHex: 0x23252A)
         public let bgActionPrimaryHover = UIColor(rgbHex: 0x23252A)
         public let bgActionSecondaryHover = UIColor(rgbHex: 0xDADBE0)
         public let bgActionPrimaryInvertedHover = UIColor(rgbHex: 0xF4F4F5)
         public let bgActionSecondaryInvertedHover = UIColor(rgbHex: 0x404249)
         public let bgActionTertiary = UIColor(rgbHex: 0xFFE4E6)
         public let bgActionTertiaryHover = UIColor(rgbHex: 0xA9ABB3)
-        public let bgActionTertiaryInverted = UIColor(rgbHex: 0x881337)
+        public let bgActionTertiaryInverted = UIColor(rgbHex: 0x404249)
         public let bgActionTertiaryInvertedHover = UIColor(rgbHex: 0x585B62)
         public let bgActionActive = UIColor(rgbHex: 0xC9CAD0)
-        public let bgActionDisabled = UIColor(rgbHex: 0xFECDD3)
+        public let bgActionDisabled = UIColor(rgbHex: 0xC9CAD0)
         public let bgActionError = UIColor(rgbHex: 0xFFCACA)
 
         // MARK: Background — illustration
