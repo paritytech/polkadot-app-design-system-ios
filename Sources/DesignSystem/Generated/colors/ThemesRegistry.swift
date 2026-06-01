@@ -2,6 +2,8 @@ public enum ThemesRegistry {
     public static let factories: [ThemeSelection: () -> Theme] = [
         .berlinNight: BerlinNightTheme.init,
         .berlinDay: BerlinDayTheme.init,
+        .lisbon: LisbonTheme.init,
+        .malta: MaltaTheme.init,
         .tokyo: TokyoTheme.init
     ]
 
