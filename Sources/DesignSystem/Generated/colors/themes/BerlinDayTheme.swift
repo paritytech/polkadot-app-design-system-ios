@@ -27,8 +27,6 @@ public final class BerlinDayTheme: CommonTheme, @unchecked Sendable {
         public let fgSecondaryHover = UIColor(rgbHex: 0x0B0C0F)
         public let fgSecondaryInvertedHover = UIColor(rgbHex: 0xDADADA)
         public let fgDisabled = UIColor(rgbHex: 0x8C8F98)
-        public let fgAccent = UIColor(rgbHex: 0x0B0C0F)
-        public let fgAccentInverted = UIColor(rgbHex: 0xF4F4F5)
 
         // MARK: Background — surface
 
@@ -38,10 +36,6 @@ public final class BerlinDayTheme: CommonTheme, @unchecked Sendable {
         public let bgSurfaceNestedInverted = UIColor(rgbHex: 0x23252A)
         public let bgSurfaceOverlay = UIColor(rgbaHex: 0x0000_007A)
         public let bgSurfaceNested = UIColor(rgbHex: 0xF7F7F8)
-        public let bgSurfaceAccent = UIColor(rgbHex: 0x1A1A1A)
-        public let bgSurfaceAccentInverted = UIColor(rgbHex: 0xFFFFFF)
-        public let bgSurfaceAccentSoft = UIColor(rgbHex: 0x23252A)
-        public let bgSurfaceAccentSoftInverted = UIColor(rgbHex: 0xF7F7F8)
 
         // MARK: Background — selection
 
@@ -66,22 +60,20 @@ public final class BerlinDayTheme: CommonTheme, @unchecked Sendable {
         // MARK: Background — action
 
         public let bgActionPrimary = UIColor(rgbHex: 0x0B0C0F)
-        public let bgActionSecondary = UIColor(rgbHex: 0xDADBE0)
+        public let bgActionSecondary = UIColor(rgbHex: 0xC9CAD0)
         public let bgActionPrimaryInverted = UIColor(rgbHex: 0xFFFFFF)
         public let bgActionSecondaryInverted = UIColor(rgbHex: 0x23252A)
         public let bgActionPrimaryHover = UIColor(rgbHex: 0x23252A)
-        public let bgActionSecondaryHover = UIColor(rgbHex: 0xA9ABB3)
+        public let bgActionSecondaryHover = UIColor(rgbHex: 0xDADBE0)
         public let bgActionPrimaryInvertedHover = UIColor(rgbHex: 0xF4F4F5)
         public let bgActionSecondaryInvertedHover = UIColor(rgbHex: 0x404249)
         public let bgActionTertiary = UIColor(rgbHex: 0xF4F4F5)
-        public let bgActionTertiaryHover = UIColor(rgbHex: 0xC9CAD0)
+        public let bgActionTertiaryHover = UIColor(rgbHex: 0xA9ABB3)
         public let bgActionTertiaryInverted = UIColor(rgbHex: 0x404249)
         public let bgActionTertiaryInvertedHover = UIColor(rgbHex: 0x585B62)
         public let bgActionActive = UIColor(rgbHex: 0xC9CAD0)
-        public let bgActionDisabled = UIColor(rgbHex: 0xF4F4F5)
+        public let bgActionDisabled = UIColor(rgbHex: 0xC9CAD0)
         public let bgActionError = UIColor(rgbHex: 0xFFCACA)
-        public let bgActionAccent = UIColor(rgbHex: 0x0B0C0F)
-        public let bgActionAccentInverted = UIColor(rgbHex: 0xFFFFFF)
 
         // MARK: Background — illustration
 
@@ -92,7 +84,7 @@ public final class BerlinDayTheme: CommonTheme, @unchecked Sendable {
 
         // MARK: Stroke
 
-        public let strokePrimary = UIColor(rgbHex: 0xF4F4F5)
+        public let strokePrimary = UIColor(rgbHex: 0xDADBE0)
         public let strokeError = UIColor(rgbHex: 0xD9363E)
         public let strokeWarning = UIColor(rgbHex: 0xF59E0B)
         public let strokeSuccess = UIColor(rgbHex: 0x22C55E)
@@ -100,8 +92,6 @@ public final class BerlinDayTheme: CommonTheme, @unchecked Sendable {
         public let strokePrimaryInverted = UIColor(rgbHex: 0x2C2E34)
         public let strokeSecondary = UIColor(rgbHex: 0xDADBE0)
         public let strokeCutout = UIColor(rgbHex: 0xFFFFFF)
-        public let strokeAccent = UIColor(rgbHex: 0xA9ABB3)
-        public let strokeAccentSoft = UIColor(rgbHex: 0x8C8F98)
 
         // MARK: Focus
 
@@ -113,34 +103,32 @@ public final class BerlinDayTheme: CommonTheme, @unchecked Sendable {
         public let shadowSoft = UIColor(rgbaHex: 0x0000_003D)
         public let shadowMedium = UIColor(rgbaHex: 0x0000_007A)
 
-        // MARK: Illustrative — background
+        // MARK: Avatar — background
 
-        public let illustrativeBgAmethyst = UIColor(rgbHex: 0x7C3AED)
-        public let illustrativeBgOpal = UIColor(rgbHex: 0x1E1B4B)
-        public let illustrativeBgTurquoise = UIColor(rgbHex: 0x0891B2)
-        public let illustrativeBgOnyx = UIColor(rgbHex: 0x1E293B)
-        public let illustrativeBgPearl = UIColor(rgbHex: 0x262626)
-        public let illustrativeBgEmerald = UIColor(rgbHex: 0x064E3B)
-        public let illustrativeBgTopaz = UIColor(rgbHex: 0xC2410C)
-        public let illustrativeBgRuby = UIColor(rgbHex: 0x9F1239)
-        public let illustrativeBgSapphire = UIColor(rgbHex: 0x1E3A8A)
-        public let illustrativeBgGarnet = UIColor(rgbHex: 0x7F1D1D)
-        public let illustrativeBgBlack = UIColor(rgbHex: 0x000000)
-        public let illustrativeBgWhite = UIColor(rgbHex: 0xFFFFFF)
+        public let avatarBgAmethyst = UIColor(rgbHex: 0x7C3AED)
+        public let avatarBgOpal = UIColor(rgbHex: 0x1E1B4B)
+        public let avatarBgTurquoise = UIColor(rgbHex: 0x0891B2)
+        public let avatarBgOnyx = UIColor(rgbHex: 0x1E293B)
+        public let avatarBgPearl = UIColor(rgbHex: 0x262626)
+        public let avatarBgEmerald = UIColor(rgbHex: 0x064E3B)
+        public let avatarBgTopaz = UIColor(rgbHex: 0xC2410C)
+        public let avatarBgRuby = UIColor(rgbHex: 0x9F1239)
+        public let avatarBgSapphire = UIColor(rgbHex: 0x1E3A8A)
+        public let avatarBgGarnet = UIColor(rgbHex: 0x7F1D1D)
 
-        // MARK: Illustrative — foreground
+        // MARK: Avatar — foreground
 
-        public let illustrativeFgAmethyst = UIColor(rgbHex: 0xEDE9FE)
-        public let illustrativeFgOpal = UIColor(rgbHex: 0xA5B4FC)
-        public let illustrativeFgTurquoise = UIColor(rgbHex: 0xCFFAFE)
-        public let illustrativeFgOnyx = UIColor(rgbHex: 0xE5E7EB)
-        public let illustrativeFgPearl = UIColor(rgbHex: 0xF5F5F5)
-        public let illustrativeFgEmerald = UIColor(rgbHex: 0xD1FAE5)
-        public let illustrativeFgTopaz = UIColor(rgbHex: 0xFFEDD5)
-        public let illustrativeFgRuby = UIColor(rgbHex: 0xFFE4E6)
-        public let illustrativeFgSapphire = UIColor(rgbHex: 0xDBEAFE)
-        public let illustrativeFgGarnet = UIColor(rgbHex: 0xFEE2E2)
-        public let illustrativeFgAmethyst2 = UIColor(rgbHex: 0xEDE9FE)
+        public let avatarFgAmethyst = UIColor(rgbHex: 0xEDE9FE)
+        public let avatarFgOpal = UIColor(rgbHex: 0xA5B4FC)
+        public let avatarFgTurquoise = UIColor(rgbHex: 0xCFFAFE)
+        public let avatarFgOnyx = UIColor(rgbHex: 0xE5E7EB)
+        public let avatarFgPearl = UIColor(rgbHex: 0xF5F5F5)
+        public let avatarFgEmerald = UIColor(rgbHex: 0xD1FAE5)
+        public let avatarFgTopaz = UIColor(rgbHex: 0xFFEDD5)
+        public let avatarFgRuby = UIColor(rgbHex: 0xFFE4E6)
+        public let avatarFgSapphire = UIColor(rgbHex: 0xDBEAFE)
+        public let avatarFgGarnet = UIColor(rgbHex: 0xFEE2E2)
+        public let avatarFgAmethyst2 = UIColor(rgbHex: 0xEDE9FE)
 
         // MARK: Gradient
 
