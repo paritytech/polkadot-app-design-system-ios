@@ -1,9 +1,9 @@
 import UIKit
 
-public final class TokyoTheme: CommonTheme, @unchecked Sendable {
+public final class MaltaTheme: CommonTheme, @unchecked Sendable {
     public init() {
         super.init(
-            id: "tokyo",
+            id: "malta",
             statusBarStyle: .lightContent,
             colors: Colors()
         )
@@ -13,35 +13,35 @@ public final class TokyoTheme: CommonTheme, @unchecked Sendable {
         // MARK: Foreground
 
         public let fgError = UIColor(rgbHex: 0xD9363E)
-        public let fgLinkHover = UIColor(rgbHex: 0x881337)
-        public let fgLink = UIColor(rgbHex: 0x9F1239)
-        public let fgTertiary = UIColor(rgbHex: 0xD14967)
-        public let fgSecondary = UIColor(rgbHex: 0x881337)
+        public let fgLinkHover = UIColor(rgbHex: 0x064E3B)
+        public let fgLink = UIColor(rgbHex: 0x065F46)
+        public let fgTertiary = UIColor(rgbHex: 0x059669)
+        public let fgSecondary = UIColor(rgbHex: 0x064E3B)
         public let fgWarning = UIColor(rgbHex: 0xD17F00)
         public let fgSuccess = UIColor(rgbHex: 0x16A34A)
-        public let fgPrimary = UIColor(rgbHex: 0x4C0519)
+        public let fgPrimary = UIColor(rgbHex: 0x022C22)
         public let fgPrimaryInverted = UIColor(rgbHex: 0xF4F4F5)
-        public let fgSecondaryInverted = UIColor(rgbHex: 0xFFF7F8)
-        public let fgTertiaryInverted = UIColor(rgbHex: 0xFFE4E6)
+        public let fgSecondaryInverted = UIColor(rgbHex: 0xECFDF5)
+        public let fgTertiaryInverted = UIColor(rgbHex: 0xD1FAE5)
         public let fgStaticWhite = UIColor(rgbHex: 0xFFFFFF)
         public let fgSecondaryHover = UIColor(rgbHex: 0x0B0C0F)
         public let fgSecondaryInvertedHover = UIColor(rgbHex: 0xDADADA)
-        public let fgDisabled = UIColor(rgbHex: 0xD9576D)
+        public let fgDisabled = UIColor(rgbHex: 0x10B981)
 
         // MARK: Background — surface
 
-        public let bgSurfaceMain = UIColor(rgbHex: 0xFFE4E6)
+        public let bgSurfaceMain = UIColor(rgbHex: 0xD1FAE5)
         public let bgSurfaceContainer = UIColor(rgbHex: 0xFFFFFF)
-        public let bgSurfaceContainerInverted = UIColor(rgbHex: 0x9F1239)
-        public let bgSurfaceNestedInverted = UIColor(rgbHex: 0xD9576D)
+        public let bgSurfaceContainerInverted = UIColor(rgbHex: 0x065F46)
+        public let bgSurfaceNestedInverted = UIColor(rgbHex: 0x10B981)
         public let bgSurfaceOverlay = UIColor(rgbaHex: 0x0000_007A)
-        public let bgSurfaceNested = UIColor(rgbHex: 0xFFE4E6)
+        public let bgSurfaceNested = UIColor(rgbHex: 0xD1FAE5)
 
         // MARK: Background — selection
 
-        public let bgSelectionContainerHover = UIColor(rgbHex: 0xFFF7F8)
-        public let bgSelectionContainerActive = UIColor(rgbHex: 0xFFE4E6)
-        public let bgSelectionContainerHoverInverted = UIColor(rgbHex: 0x4C0519)
+        public let bgSelectionContainerHover = UIColor(rgbHex: 0xECFDF5)
+        public let bgSelectionContainerActive = UIColor(rgbHex: 0xD1FAE5)
+        public let bgSelectionContainerHoverInverted = UIColor(rgbHex: 0x022C22)
         public let bgSelectionContainerActiveInverted = UIColor(rgbHex: 0x1A1B20)
 
         // MARK: Background — status
@@ -59,38 +59,38 @@ public final class TokyoTheme: CommonTheme, @unchecked Sendable {
 
         // MARK: Background — action
 
-        public let bgActionPrimary = UIColor(rgbHex: 0x9F1239)
-        public let bgActionSecondary = UIColor(rgbHex: 0xFDA4AF)
+        public let bgActionPrimary = UIColor(rgbHex: 0x065F46)
+        public let bgActionSecondary = UIColor(rgbHex: 0x6EE7B7)
         public let bgActionPrimaryInverted = UIColor(rgbHex: 0xFFFFFF)
-        public let bgActionSecondaryInverted = UIColor(rgbHex: 0x4C0519)
+        public let bgActionSecondaryInverted = UIColor(rgbHex: 0x022C22)
         public let bgActionPrimaryHover = UIColor(rgbHex: 0x23252A)
         public let bgActionSecondaryHover = UIColor(rgbHex: 0xDADBE0)
         public let bgActionPrimaryInvertedHover = UIColor(rgbHex: 0xF4F4F5)
         public let bgActionSecondaryInvertedHover = UIColor(rgbHex: 0x404249)
-        public let bgActionTertiary = UIColor(rgbHex: 0xFFE4E6)
+        public let bgActionTertiary = UIColor(rgbHex: 0xD1FAE5)
         public let bgActionTertiaryHover = UIColor(rgbHex: 0xA9ABB3)
-        public let bgActionTertiaryInverted = UIColor(rgbHex: 0x881337)
+        public let bgActionTertiaryInverted = UIColor(rgbHex: 0x064E3B)
         public let bgActionTertiaryInvertedHover = UIColor(rgbHex: 0x585B62)
         public let bgActionActive = UIColor(rgbHex: 0xC9CAD0)
-        public let bgActionDisabled = UIColor(rgbHex: 0xFECDD3)
+        public let bgActionDisabled = UIColor(rgbHex: 0xA7F3D0)
         public let bgActionError = UIColor(rgbHex: 0xFFCACA)
 
         // MARK: Background — illustration
 
-        public let bgIllustrationDark = UIColor(rgbHex: 0xD14967)
-        public let bgIllustrationLight = UIColor(rgbHex: 0xFFF7F8)
-        public let bgIllustrationDarkMuted = UIColor(rgbHex: 0xFDA4AF)
-        public let bgIllustrationLightMuted = UIColor(rgbHex: 0xFFE4E6)
+        public let bgIllustrationDark = UIColor(rgbHex: 0x059669)
+        public let bgIllustrationLight = UIColor(rgbHex: 0xECFDF5)
+        public let bgIllustrationDarkMuted = UIColor(rgbHex: 0x6EE7B7)
+        public let bgIllustrationLightMuted = UIColor(rgbHex: 0xD1FAE5)
 
         // MARK: Stroke
 
-        public let strokePrimary = UIColor(rgbHex: 0xFECDD3)
+        public let strokePrimary = UIColor(rgbHex: 0xA7F3D0)
         public let strokeError = UIColor(rgbHex: 0xD9363E)
         public let strokeWarning = UIColor(rgbHex: 0xF59E0B)
         public let strokeSuccess = UIColor(rgbHex: 0x22C55E)
-        public let strokeTertiary = UIColor(rgbHex: 0xFB7185)
+        public let strokeTertiary = UIColor(rgbHex: 0x34D399)
         public let strokePrimaryInverted = UIColor(rgbHex: 0x2C2E34)
-        public let strokeSecondary = UIColor(rgbHex: 0xFDA4AF)
+        public let strokeSecondary = UIColor(rgbHex: 0x6EE7B7)
         public let strokeCutout = UIColor(rgbHex: 0xFFFFFF)
 
         // MARK: Focus
