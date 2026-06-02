@@ -1,27 +1,26 @@
 import Keystore_iOS
+import os
 import UIKit
 
-@MainActor
-public protocol TypographyManagerProtocol: AnyObject {
+public protocol TypographyManagerProtocol: AnyObject, Sendable {
     var family: TypographyFamily { get }
     var selection: TypographySelection { get }
 
-    func select(_ selection: TypographySelection)
-    func setup(scene: UIWindowScene)
+    @MainActor func select(_ selection: TypographySelection)
+    @MainActor func setup(scene: UIWindowScene)
 
     func font(for style: TypographyStyle) -> UIFont
 }
 
-@MainActor
-public final class TypographyManager {
+public final class TypographyManager: @unchecked Sendable {
     public static let shared: TypographyManagerProtocol = TypographyManager()
 
-    public private(set) var family: TypographyFamily
-    public private(set) var selection: TypographySelection
-
+    private let state: OSAllocatedUnfairLock<State>
     private let settingsManager: SettingsManagerProtocol
-
     private let scenes = NSHashTable<UIWindowScene>.weakObjects()
+
+    public var family: TypographyFamily { state.withLock { $0.family } }
+    public var selection: TypographySelection { state.withLock { $0.selection } }
 
     init(
         selection: TypographySelection? = nil,
@@ -32,8 +31,12 @@ public final class TypographyManager {
         let resolved = selection
             ?? Self.loadPersisted(from: settingsManager)
             ?? TypographyFamiliesRegistry.default
-        self.selection = resolved
-        family = TypographyFamiliesRegistry.makeFamily(resolved)
+        state = OSAllocatedUnfairLock(
+            initialState: State(
+                family: TypographyFamiliesRegistry.makeFamily(resolved),
+                selection: resolved
+            )
+        )
     }
 }
 
@@ -45,11 +48,11 @@ private extension TypographyManager {
         return TypographySelection(rawValue: raw)
     }
 
-    func persist() {
+    func persist(_ selection: TypographySelection) {
         settingsManager.set(value: selection.rawValue, for: Self.storageKey)
     }
 
-    func updateScenes(with selection: TypographySelection) {
+    @MainActor func updateScenes(with selection: TypographySelection) {
         scenes.allObjects.forEach { $0.traitOverrides.appTypography = selection }
     }
 }
@@ -58,11 +61,14 @@ extension TypographyManager: TypographyManagerProtocol {
     public func select(_ selection: TypographySelection) {
         guard selection != self.selection else { return }
 
-        self.selection = selection
+        let newFamily = TypographyFamiliesRegistry.makeFamily(selection)
+        state.withLock {
+            $0.selection = selection
+            $0.family = newFamily
+        }
 
-        family = TypographyFamiliesRegistry.makeFamily(selection)
         updateScenes(with: selection)
-        persist()
+        persist(selection)
     }
 
     public func setup(scene: UIWindowScene) {
@@ -71,6 +77,7 @@ extension TypographyManager: TypographyManagerProtocol {
     }
 
     public func font(for style: TypographyStyle) -> UIFont {
+        let family = state.withLock { $0.family }
         let spec = style.resolvedSpec
 
         return family.font(
@@ -78,5 +85,12 @@ extension TypographyManager: TypographyManagerProtocol {
             weight: spec.weight,
             size: spec.size
         )
+    }
+}
+
+private extension TypographyManager {
+    struct State {
+        var family: TypographyFamily
+        var selection: TypographySelection
     }
 }
