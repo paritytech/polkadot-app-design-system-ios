@@ -1,6 +1,5 @@
 import UIKit
 
-@MainActor
 public extension UIFont {
     // MARK: Display
 
