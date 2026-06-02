@@ -6,6 +6,7 @@ public protocol ThemeManagerProtocol: AnyObject {
     var theme: Theme { get }
     var mode: ThemeMode { get }
 
+    func observeTheme() -> AsyncStream<Theme>
     func select(_ mode: ThemeMode)
     func setup(scene: UIWindowScene)
 }
@@ -20,6 +21,8 @@ public final class ThemeManager {
     private let settingsManager: SettingsManagerProtocol
 
     private let scenes = NSHashTable<UIWindowScene>.weakObjects()
+
+    private var themeObservers: [UUID: AsyncStream<Theme>.Continuation] = [:]
 
     private var currentSelection: ThemeSelection {
         Self.resolveSelection(mode: mode)
@@ -65,10 +68,15 @@ private extension ThemeManager {
 
         theme = next
         updateScenes(with: selection)
+        notifyThemeObservers()
     }
 
     func updateScenes(with selection: ThemeSelection) {
         scenes.allObjects.forEach { $0.traitOverrides.appTheme = selection }
+    }
+
+    func notifyThemeObservers() {
+        themeObservers.values.forEach { $0.yield(theme) }
     }
 
     static func resolveSelection(mode: ThemeMode) -> ThemeSelection {
@@ -80,6 +88,19 @@ private extension ThemeManager {
 }
 
 extension ThemeManager: ThemeManagerProtocol {
+    public func observeTheme() -> AsyncStream<Theme> {
+        AsyncStream { continuation in
+            let id = UUID()
+            themeObservers[id] = continuation
+            continuation.yield(theme)
+            continuation.onTermination = { [weak self] _ in
+                Task { @MainActor in
+                    self?.themeObservers[id] = nil
+                }
+            }
+        }
+    }
+
     public func select(_ mode: ThemeMode) {
         guard mode != self.mode else { return }
 
