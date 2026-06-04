@@ -15,7 +15,7 @@ public final class LisbonTheme: CommonTheme, @unchecked Sendable {
         public let fgError = UIColor(rgbHex: 0xD9363E)
         public let fgLinkHover = UIColor(rgbHex: 0x7C2D12)
         public let fgLink = UIColor(rgbHex: 0x9A3412)
-        public let fgTertiary = UIColor(rgbHex: 0xC2410C)
+        public let fgTertiary = UIColor(rgbHex: 0xC24C1B)
         public let fgSecondary = UIColor(rgbHex: 0x7C2D12)
         public let fgWarning = UIColor(rgbHex: 0xD17F00)
         public let fgSuccess = UIColor(rgbHex: 0x16A34A)
@@ -26,14 +26,14 @@ public final class LisbonTheme: CommonTheme, @unchecked Sendable {
         public let fgStaticWhite = UIColor(rgbHex: 0xFFFFFF)
         public let fgSecondaryHover = UIColor(rgbHex: 0x0B0C0F)
         public let fgSecondaryInvertedHover = UIColor(rgbHex: 0xDADADA)
-        public let fgDisabled = UIColor(rgbHex: 0xF97316)
+        public let fgDisabled = UIColor(rgbHex: 0xED9853)
 
         // MARK: Background — surface
 
         public let bgSurfaceMain = UIColor(rgbHex: 0xFFEDD5)
         public let bgSurfaceContainer = UIColor(rgbHex: 0xFFFFFF)
         public let bgSurfaceContainerInverted = UIColor(rgbHex: 0x9A3412)
-        public let bgSurfaceNestedInverted = UIColor(rgbHex: 0xF97316)
+        public let bgSurfaceNestedInverted = UIColor(rgbHex: 0xD96C21)
         public let bgSurfaceOverlay = UIColor(rgbaHex: 0x0000_007A)
         public let bgSurfaceNested = UIColor(rgbHex: 0xFFEDD5)
 
@@ -59,7 +59,7 @@ public final class LisbonTheme: CommonTheme, @unchecked Sendable {
 
         // MARK: Background — action
 
-        public let bgActionPrimary = UIColor(rgbHex: 0xF97316)
+        public let bgActionPrimary = UIColor(rgbHex: 0xD96C21)
         public let bgActionSecondary = UIColor(rgbHex: 0xFDBA74)
         public let bgActionPrimaryInverted = UIColor(rgbHex: 0xFFFFFF)
         public let bgActionSecondaryInverted = UIColor(rgbHex: 0x431407)
@@ -77,7 +77,7 @@ public final class LisbonTheme: CommonTheme, @unchecked Sendable {
 
         // MARK: Background — illustration
 
-        public let bgIllustrationDark = UIColor(rgbHex: 0xC2410C)
+        public let bgIllustrationDark = UIColor(rgbHex: 0xC24C1B)
         public let bgIllustrationLight = UIColor(rgbHex: 0xFFF7ED)
         public let bgIllustrationDarkMuted = UIColor(rgbHex: 0xFDBA74)
         public let bgIllustrationLightMuted = UIColor(rgbHex: 0xFFEDD5)
@@ -88,7 +88,7 @@ public final class LisbonTheme: CommonTheme, @unchecked Sendable {
         public let strokeError = UIColor(rgbHex: 0xD9363E)
         public let strokeWarning = UIColor(rgbHex: 0xF59E0B)
         public let strokeSuccess = UIColor(rgbHex: 0x22C55E)
-        public let strokeTertiary = UIColor(rgbHex: 0xFB923C)
+        public let strokeTertiary = UIColor(rgbHex: 0xED9853)
         public let strokePrimaryInverted = UIColor(rgbHex: 0x2C2E34)
         public let strokeSecondary = UIColor(rgbHex: 0xFDBA74)
         public let strokeCutout = UIColor(rgbHex: 0xFFFFFF)
@@ -111,7 +111,7 @@ public final class LisbonTheme: CommonTheme, @unchecked Sendable {
         public let avatarBgOnyx = UIColor(rgbHex: 0x1E293B)
         public let avatarBgPearl = UIColor(rgbHex: 0x262626)
         public let avatarBgEmerald = UIColor(rgbHex: 0x064E3B)
-        public let avatarBgTopaz = UIColor(rgbHex: 0xC2410C)
+        public let avatarBgTopaz = UIColor(rgbHex: 0xC24C1B)
         public let avatarBgRuby = UIColor(rgbHex: 0x9F1239)
         public let avatarBgSapphire = UIColor(rgbHex: 0x1E3A8A)
         public let avatarBgGarnet = UIColor(rgbHex: 0x7F1D1D)
@@ -128,7 +128,6 @@ public final class LisbonTheme: CommonTheme, @unchecked Sendable {
         public let avatarFgRuby = UIColor(rgbHex: 0xFFE4E6)
         public let avatarFgSapphire = UIColor(rgbHex: 0xDBEAFE)
         public let avatarFgGarnet = UIColor(rgbHex: 0xFEE2E2)
-        public let avatarFgAmethyst2 = UIColor(rgbHex: 0xEDE9FE)
 
         // MARK: Gradient
 

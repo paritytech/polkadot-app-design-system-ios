@@ -119,7 +119,6 @@ public extension ShapeStyle where Self == Color {
     static var avatarFgRuby: Color { .app(.avatarFgRuby) }
     static var avatarFgSapphire: Color { .app(.avatarFgSapphire) }
     static var avatarFgGarnet: Color { .app(.avatarFgGarnet) }
-    static var avatarFgAmethyst2: Color { .app(.avatarFgAmethyst2) }
 
     // MARK: Gradient
 

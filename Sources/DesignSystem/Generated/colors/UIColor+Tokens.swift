@@ -119,7 +119,6 @@ public extension UIColor {
     static let avatarFgRuby = app(.avatarFgRuby)
     static let avatarFgSapphire = app(.avatarFgSapphire)
     static let avatarFgGarnet = app(.avatarFgGarnet)
-    static let avatarFgAmethyst2 = app(.avatarFgAmethyst2)
 
     // MARK: Gradient
 
