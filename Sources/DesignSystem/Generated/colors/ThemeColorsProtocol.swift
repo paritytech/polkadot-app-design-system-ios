@@ -119,7 +119,6 @@ public protocol ThemeColorsProtocol: Sendable {
     var avatarFgRuby: UIColor { get }
     var avatarFgSapphire: UIColor { get }
     var avatarFgGarnet: UIColor { get }
-    var avatarFgAmethyst2: UIColor { get }
 
     // MARK: Gradient
 
@@ -236,7 +235,6 @@ public enum ThemeColor: String, Hashable, CaseIterable {
     case avatarFgRuby
     case avatarFgSapphire
     case avatarFgGarnet
-    case avatarFgAmethyst2
 
     // Gradient
     case gradientNavigationOverlayStart
@@ -329,7 +327,6 @@ public extension ThemeColorsProtocol {
         case .avatarFgRuby: avatarFgRuby
         case .avatarFgSapphire: avatarFgSapphire
         case .avatarFgGarnet: avatarFgGarnet
-        case .avatarFgAmethyst2: avatarFgAmethyst2
         case .gradientNavigationOverlayStart: gradientNavigationOverlayStart
         case .gradientNavigationOverlayEnd: gradientNavigationOverlayEnd
         }

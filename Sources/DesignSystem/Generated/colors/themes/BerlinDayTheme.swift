@@ -111,7 +111,7 @@ public final class BerlinDayTheme: CommonTheme, @unchecked Sendable {
         public let avatarBgOnyx = UIColor(rgbHex: 0x1E293B)
         public let avatarBgPearl = UIColor(rgbHex: 0x262626)
         public let avatarBgEmerald = UIColor(rgbHex: 0x064E3B)
-        public let avatarBgTopaz = UIColor(rgbHex: 0xC2410C)
+        public let avatarBgTopaz = UIColor(rgbHex: 0xC24C1B)
         public let avatarBgRuby = UIColor(rgbHex: 0x9F1239)
         public let avatarBgSapphire = UIColor(rgbHex: 0x1E3A8A)
         public let avatarBgGarnet = UIColor(rgbHex: 0x7F1D1D)
@@ -128,7 +128,6 @@ public final class BerlinDayTheme: CommonTheme, @unchecked Sendable {
         public let avatarFgRuby = UIColor(rgbHex: 0xFFE4E6)
         public let avatarFgSapphire = UIColor(rgbHex: 0xDBEAFE)
         public let avatarFgGarnet = UIColor(rgbHex: 0xFEE2E2)
-        public let avatarFgAmethyst2 = UIColor(rgbHex: 0xEDE9FE)
 
         // MARK: Gradient
 
