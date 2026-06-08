@@ -31,7 +31,7 @@ public final class MaltaTheme: CommonTheme, @unchecked Sendable {
         // MARK: Background — surface
 
         public let bgSurfaceMain = UIColor(rgbHex: 0xD1FAE5)
-        public let bgSurfaceContainer = UIColor(rgbHex: 0xFFFFFF)
+        public let bgSurfaceContainer = UIColor(rgbHex: 0xF5FFFA)
         public let bgSurfaceContainerInverted = UIColor(rgbHex: 0x065F46)
         public let bgSurfaceNestedInverted = UIColor(rgbHex: 0x10B981)
         public let bgSurfaceOverlay = UIColor(rgbaHex: 0x0000_007A)

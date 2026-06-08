@@ -31,7 +31,7 @@ public final class LisbonTheme: CommonTheme, @unchecked Sendable {
         // MARK: Background — surface
 
         public let bgSurfaceMain = UIColor(rgbHex: 0xFFEDD5)
-        public let bgSurfaceContainer = UIColor(rgbHex: 0xFFFFFF)
+        public let bgSurfaceContainer = UIColor(rgbHex: 0xFFFBF5)
         public let bgSurfaceContainerInverted = UIColor(rgbHex: 0x9A3412)
         public let bgSurfaceNestedInverted = UIColor(rgbHex: 0xD96C21)
         public let bgSurfaceOverlay = UIColor(rgbaHex: 0x0000_007A)

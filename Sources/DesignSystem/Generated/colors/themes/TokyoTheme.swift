@@ -26,12 +26,12 @@ public final class TokyoTheme: CommonTheme, @unchecked Sendable {
         public let fgStaticWhite = UIColor(rgbHex: 0xFFFFFF)
         public let fgSecondaryHover = UIColor(rgbHex: 0x0B0C0F)
         public let fgSecondaryInvertedHover = UIColor(rgbHex: 0xDADADA)
-        public let fgDisabled = UIColor(rgbHex: 0xFB7185)
+        public let fgDisabled = UIColor(rgbHex: 0xFDA4AF)
 
         // MARK: Background — surface
 
         public let bgSurfaceMain = UIColor(rgbHex: 0xFFE4E6)
-        public let bgSurfaceContainer = UIColor(rgbHex: 0xFFFFFF)
+        public let bgSurfaceContainer = UIColor(rgbHex: 0xFFF5F6)
         public let bgSurfaceContainerInverted = UIColor(rgbHex: 0x9F1239)
         public let bgSurfaceNestedInverted = UIColor(rgbHex: 0xD9576D)
         public let bgSurfaceOverlay = UIColor(rgbaHex: 0x0000_007A)
