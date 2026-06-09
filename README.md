@@ -92,3 +92,7 @@ VStack(spacing: DSSpacings.large) { … }
 ## Updating tokens
 
 Tokens are edited in the upstream [polkadot-app-design-system](https://github.com/novasamatech/polkadot-app-design-system) repo. The generator regenerates the Swift output into `Sources/DesignSystem/Generated/` — those files are checked in here but driven by the upstream source.
+
+## License
+
+Licensed under the [Apache License, Version 2.0](LICENSE).
