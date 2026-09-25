@@ -20,6 +20,7 @@ private extension PolkadotDefaultTypography {
         case .sans: "Inter-\(suffix(weight))"
         case .mono: "MartianMono-\(suffix(weight))"
         case .accent: "Manrope-\(suffix(weight))"
+        case .smallCaps: "SourceSans3-\(suffix(weight))"
         }
     }
 

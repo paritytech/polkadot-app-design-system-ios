@@ -70,4 +70,9 @@ public extension UIFont {
     // MARK: Caption
 
     static var captionSmall: UIFont { .app(.captionSmall) }
+
+    // MARK: SmallCaps
+
+    static var smallCapsHeadlineMedium: UIFont { .app(.smallCapsHeadlineMedium) }
+    static var smallCapsDisplaySmall: UIFont { .app(.smallCapsDisplaySmall) }
 }

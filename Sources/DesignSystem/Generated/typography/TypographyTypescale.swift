@@ -39,6 +39,8 @@ public extension TypographyStyle {
         case captionMedium
         case codeSmall
         case captionSmall
+        case smallCapsHeadlineMedium
+        case smallCapsDisplaySmall
     }
 }
 
@@ -82,6 +84,8 @@ public extension TypographyStyle.Typescale {
         case .captionMedium: .init(family: .sans, size: 12, weight: .semiBold, lineHeight: 16, tracking: 1)
         case .codeSmall: .init(family: .mono, size: 12, weight: .regular, lineHeight: 16, tracking: 0)
         case .captionSmall: .init(family: .sans, size: 10, weight: .semiBold, lineHeight: 14, tracking: 1.2)
+        case .smallCapsHeadlineMedium: .init(family: .smallCaps, size: 28, weight: .light, lineHeight: 36, tracking: 0)
+        case .smallCapsDisplaySmall: .init(family: .smallCaps, size: 36, weight: .light, lineHeight: 48, tracking: -0.5)
         }
     }
 }
@@ -134,4 +138,7 @@ public extension TypographyStyle {
     static var codeSmall: TypographyStyle { .init(typescale: .codeSmall) }
 
     static var captionSmall: TypographyStyle { .init(typescale: .captionSmall) }
+
+    static var smallCapsHeadlineMedium: TypographyStyle { .init(typescale: .smallCapsHeadlineMedium) }
+    static var smallCapsDisplaySmall: TypographyStyle { .init(typescale: .smallCapsDisplaySmall) }
 }
