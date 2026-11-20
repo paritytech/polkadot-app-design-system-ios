@@ -7,3 +7,19 @@ xcuserdata/
 DerivedData/
 .netrc
 Package.resolved
+
+# Environment
+.env*
+!.env.example
+*.local
+
+# IDE
+.idea/
+.vscode/
+
+# AI tooling state
+.claude/settings.local.json
+.claude/sessions/
+.claude/cache/
+.cursor/
+.mcp.json

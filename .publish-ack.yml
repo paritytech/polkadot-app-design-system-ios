@@ -1,0 +1,27 @@
+version: 1
+repo: polkadot-app-design-system-ios
+audited_at: 2026-11-20
+audited_commit: 43e152c
+accepts:
+  - id: history-commit-messages
+    item: 5
+    location: git history
+    finding: >-
+      Early commit messages name the repository the package was extracted
+      from and the organisation the repository used to live in.
+    reason: >-
+      A full-history secret scan found no credentials. Commit messages are not
+      removable without rewriting history and breaking published tags.
+    mitigation: >-
+      Nothing in the tree refers to either.
+    accepted_by: repository maintainers
+  - id: commit-author-emails
+    item: 5
+    location: git history
+    finding: >-
+      Commits carry the authors' real e-mail addresses.
+    reason: >-
+      Authorship metadata, not removable without rewriting history.
+    mitigation: >-
+      None required.
+    accepted_by: repository maintainers
